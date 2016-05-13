@@ -5,6 +5,8 @@
 	</p>
 	<br />
 <% end %>
+<p>by <%= link_to @article.author.name, author_path(@article.author) %></p>
+<br />
 <p><%= @article.body %></p>
 <br />
 <p>

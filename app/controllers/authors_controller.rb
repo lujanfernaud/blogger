@@ -2,7 +2,7 @@ class AuthorsController < ApplicationController
   before_action :set_author, only: [:show, :edit, :update, :destroy]
 
   before_filter :zero_authors_or_authenticated, only: [:new, :create]
-  before_filter :require_login, except: [:new, :create]
+  before_filter :require_login, except: [:new, :create, :show]
 
   def zero_authors_or_authenticated
     unless Author.count == 0 || current_user
@@ -20,6 +20,7 @@ class AuthorsController < ApplicationController
   # GET /authors/1
   # GET /authors/1.json
   def show
+    # @article = @author.article
   end
 
   # GET /authors/new
