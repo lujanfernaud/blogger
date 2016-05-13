@@ -20,7 +20,6 @@ class AuthorsController < ApplicationController
   # GET /authors/1
   # GET /authors/1.json
   def show
-    # @article = @author.article
   end
 
   # GET /authors/new
