@@ -1,3 +1,3 @@
-# Jumpstart Lab Blogger Project
+# Jumpstart Lab's Blogger Project
 
-Jumpstart Lab Blogger Project for The Odin Project
+Jumpstart Lab's Blogger Project for The Odin Project

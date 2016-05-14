@@ -5,7 +5,7 @@
 	</p>
 	<br />
 <% end %>
-<p>by <%= link_to @article.author.name, author_path(@article.author) %></p>
+<p>by <%= link_to @article.author.name, author_path(@article.author) %> on <%= @article.created_at %></p>
 <br />
 <p><%= @article.body %></p>
 <br />
@@ -16,7 +16,7 @@
 	<% end %>
 </p>
 <br />
-<% if logged_in? %>
+<% if logged_in? and is_owner? %>
 	<%= link_to "Edit", edit_article_path(@article) %> | 
 	<%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
 	<br />
