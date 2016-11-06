@@ -51,4 +51,8 @@ class ArticlesController < ApplicationController
 
     redirect_to articles_path
   end
+
+  def popular
+    @most_popular_articles = Article.all.sort_by(&:view_count).first(10).reverse!
+  end
 end
