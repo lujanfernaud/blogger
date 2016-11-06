@@ -1,0 +1,23 @@
+<h1>Most Popular Articles</h1>
+
+<br>
+<table>
+  <% i = 0 %>
+  <% @most_popular_articles.each do |article| %>
+  <% i += 1 %>
+  <tr>
+    <td style="padding-right: 10px; text-align: right;">
+      <%= "#{i}." %>
+    </td>
+    <td style="padding-right: 10px;">
+      <%= link_to article.title, article_path(article) %>&nbsp;
+    </td>
+    <td>
+      (<%= article.view_count %> views)
+    </td>
+  </tr>
+  <% end %>
+</table>
+
+<br>
+<%= link_to "Articles List", articles_path %>
