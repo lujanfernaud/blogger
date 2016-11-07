@@ -1,0 +1,12 @@
+<h1><%= @month || @year %></h1>
+
+<br>
+<% @articles.each do |article| %>
+  <ul>
+    <li><%= link_to article.title, article_path(article) %></li>
+  </ul>
+<% end %>
+</table>
+
+<br>
+<%= link_to 'Articles List', articles_path %>

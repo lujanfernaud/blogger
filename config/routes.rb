@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   end
 
   get 'popular' => 'articles#popular'
+  
+  resources :archive
 
   resources :tags
   resources :authors
