@@ -1,12 +1,10 @@
 <h1>Archive</h1>
 
-<!-- <%= @articles_by_year_and_month.inspect %> -->
-
 <% @articles_by_year_and_month.each do |year, month| %>
   <br>
   <h2><%= link_to year, archive_path(year) %></h2>
-    <h3><%= link_to month.keys[0], archive_path(month.keys[0]) %></h3>
-      <% month.values.each do |articles| %>
+    <% month.each do |month, articles| %>
+      <h3><%= link_to month, archive_path([year, month]) %></h3>
         <ul>
           <% articles.each do |article| %>
             <li><%= link_to article.title, article_path(article) %></li>

@@ -1,12 +1,28 @@
-<h1><%= @month || @year %></h1>
+<h1>Archive</h1>
 
-<br>
-<% @articles.each do |article| %>
-  <ul>
-    <li><%= link_to article.title, article_path(article) %></li>
-  </ul>
+<% if @sort_by_year %>
+    <br>
+    <h2><%= @year %></h2>
+    <% @articles_by_year_and_month.each do |month, articles| %>
+      <h3><%= link_to month, archive_path([@year, month]) %></h3>
+        <ul>
+          <% articles.each do |article| %>
+            <li><%= link_to article.title, article_path(article) %></li>
+          <% end %>
+        </ul>
+  <% end %>
+
+<% else %>
+  <br>
+  <h2><%= link_to @year, archive_path(@year) %></h2>
+  <h3><%= @month %></h3>
+  <% @articles_by_month.each do |article| %>
+    <ul>
+      <li><%= link_to article.title, article_path(article) %></li>
+    </ul>
+  <% end %>
+  </table>
 <% end %>
-</table>
 
 <br>
-<%= link_to 'Articles List', articles_path %>
+<%= link_to 'Archive Index', archive_index_path %> | <%= link_to 'Articles List', articles_path %>
