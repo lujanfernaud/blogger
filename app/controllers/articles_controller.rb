@@ -4,7 +4,7 @@ class ArticlesController < ApplicationController
   include ArticlesHelper
 
   def index
-    @articles = Article.all
+    @articles = Article.all.reverse
   end
 
   def show
