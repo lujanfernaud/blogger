@@ -16,7 +16,7 @@ class ArticlesController < ApplicationController
   end
 
   def popular
-    @most_popular_articles = Article.all.sort_by(&:view_count).first(10).reverse!
+    @most_popular_articles = Article.all.sort_by(&:view_count).reverse.first(10)
   end
 
   def new
