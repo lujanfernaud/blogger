@@ -2,12 +2,10 @@
 
 <br>
 <table>
-  <% i = 0 %>
-  <% @most_popular_articles.each do |article| %>
-  <% i += 1 %>
+  <% @most_popular_articles.each_with_index do |article, index| %>
   <tr>
     <td style="padding-right: 10px; text-align: right;">
-      <%= "#{i}." %>
+      <%= "#{index + 1}." %>
     </td>
     <td style="padding-right: 10px;">
       <%= link_to article.title, article_path(article) %>&nbsp;

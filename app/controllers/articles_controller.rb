@@ -15,6 +15,10 @@ class ArticlesController < ApplicationController
     @comment.article_id = @article.id
   end
 
+  def popular
+    @most_popular_articles = Article.all.sort_by(&:view_count).first(10).reverse!
+  end
+
   def new
     @article = Article.new
   end
@@ -50,21 +54,5 @@ class ArticlesController < ApplicationController
     flash.notice = "Article '#{@article.title}' deleted."
 
     redirect_to articles_path
-  end
-
-  def popular
-    @most_popular_articles = Article.all.sort_by(&:view_count).first(10).reverse!
-  end
-
-  def archive
-    @articles_by_year  = Article.all.group_by { |article| article.created_at.strftime("%Y") }
-    @articles_by_month = Article.all.group_by { |article| article.created_at.strftime("%B") }
-    @articles_by_month_new = @articles_by_year.group_by { |article| article.created_at.strftime("%B") }
-  end
-
-  def month
-    @articles_by_month = Article.all.group_by { |article| article.created_at.strftime("%B") }
-    @month = params[:month]
-    @articles = @articles_by_month[@month]
   end
 end

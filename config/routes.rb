@@ -6,15 +6,12 @@ Rails.application.routes.draw do
     resources :comments
   end
 
-  get 'popular' => 'articles#popular'
-  
-  resources :archive
-
   resources :tags
   resources :authors
-
   resources :author_sessions, only: [:new, :create, :destroy]
+  resources :archive
 
-  get 'login'  => 'author_sessions#new'
-  get 'logout' => 'author_sessions#destroy'
+  get 'login'   => 'author_sessions#new'
+  get 'logout'  => 'author_sessions#destroy'
+  get 'popular' => 'articles#popular'
 end
