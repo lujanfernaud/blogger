@@ -9,3 +9,6 @@ Rails.application.config.assets.version = '1.0'
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
+
+# Assets for Start Bootstrap Clean Blog Theme
+Rails.application.config.assets.precompile += %w(clean_blog/manifest.js clean_blog/manifest.css)
