@@ -14,9 +14,11 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-left">
-                <li>
-                    <%= link_to "Home", root_path %>
-                </li>
+                <% if !current_page?(root_path) %>
+                    <li>
+                        <%= link_to "Home", root_path %>
+                    </li>
+                <% end %>
                 <li>
                     <%= link_to "Most Popular", popular_path %>
                 </li>
@@ -30,10 +32,16 @@
                     <%= link_to "Contact", contact_path, data: { no_turbolink: true }%>
                 </li>
             </ul>
+
             <ul class="nav navbar-nav navbar-right">
+                <% if logged_in? %>
+                    <li>
+                        <%= link_to "New Article", new_article_path, class: "new_article" %>
+                    </li>
+                <% end %>
                 <li>
                     <% if logged_in? %>
-                        <%= link_to "Logout (#{current_user.email})", logout_path %>
+                        <%= link_to "Logout (#{current_user.username})", logout_path %>
                     <% else %>
                         <%= link_to "Login", login_path %>
                     <% end %>
