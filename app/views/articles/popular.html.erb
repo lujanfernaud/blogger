@@ -1,21 +1,34 @@
-<h1>Most Popular Articles</h1>
+<%= render 'shim' %>
+<%= render 'navigation' %>
+<%= render 'header' %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      <table>
+        <% @most_popular_articles.each_with_index do |article, index| %>
+        <tr>
+          <td style="padding-right: 10px; text-align: right;">
+            <%= "#{index + 1}." %>
+          </td>
+          <td style="padding-right: 10px;">
+            <%= link_to article.title, article_path(article) %>&nbsp;
+          </td>
+          <td>
+            (<%= article.view_count %> views)
+          </td>
+        </tr>
+        <% end %>
+      </table>
+
+      <br>
+      <%= link_to "Go back to articles list", articles_path %>
+
+    </div>
+  </div>
+</div>
 
 <br>
-<table>
-  <% @most_popular_articles.each_with_index do |article, index| %>
-  <tr>
-    <td style="padding-right: 10px; text-align: right;">
-      <%= "#{index + 1}." %>
-    </td>
-    <td style="padding-right: 10px;">
-      <%= link_to article.title, article_path(article) %>&nbsp;
-    </td>
-    <td>
-      (<%= article.view_count %> views)
-    </td>
-  </tr>
-  <% end %>
-</table>
 
-<br>
-<%= link_to "Articles List", articles_path %>
+<%= render 'footer' %>
