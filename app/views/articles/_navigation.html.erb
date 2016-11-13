@@ -14,11 +14,6 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-left">
-                <% if !current_page?(root_path) %>
-                    <li>
-                        <%= link_to "Home", root_path %>
-                    </li>
-                <% end %>
                 <li>
                     <%= link_to "Most Popular", popular_path %>
                 </li>
