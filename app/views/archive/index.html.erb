@@ -1,17 +1,31 @@
-<h1>Archive</h1>
+<%= render 'articles/shim' %>
+<%= render 'articles/navigation' %>
+<%= render 'articles/header' %>
 
-<% @articles_by_year_and_month.each do |year, month| %>
-  <br>
-  <h2><%= link_to year, archive_path(year) %></h2>
-    <% month.each do |month, articles| %>
-      <h3><%= link_to month, archive_path([year, month]) %></h3>
-        <ul>
-          <% articles.each do |article| %>
-            <li><%= link_to article.title, article_path(article) %></li>
-          <% end %>
-        </ul>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+      <% @articles_by_year_and_month.each do |year, month| %>
+        <br>
+        <h2><%= link_to year, archive_path(year) %></h2>
+          <% month.each do |month, articles| %>
+            <h3><%= link_to month, archive_path([year, month]) %></h3>
+              <ul>
+                <% articles.each do |article| %>
+                  <li><%= link_to article.title, article_path(article) %></li>
+                <% end %>
+              </ul>
+            <% end %>
       <% end %>
-<% end %>
+
+      <br>
+      <%= link_to 'Go back to articles list', articles_path %>
+
+    </div>
+  </div>
+</div>
 
 <br>
-<%= link_to 'Articles List', articles_path %>
+
+<%= render 'articles/footer' %>
