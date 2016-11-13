@@ -28,6 +28,19 @@
         </div>
     </div>
     </header>
+<% elsif current_page?(new_article_path(@article)) %>
+    <header class="intro-header" style="background-image: 
+    url('/assets/clean_blog/post-bg.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="post-heading">
+                    <h1>Create New Article</h1>                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
 <% elsif current_page?(article_path(@article)) %>
     <header class="intro-header" style="background-image: 
     url('/assets/clean_blog/post-bg.jpg')">
