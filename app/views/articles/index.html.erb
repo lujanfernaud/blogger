@@ -1,8 +1,8 @@
 <% content_for :head, auto_discovery_link_tag(:rss, articles_url) %>
 
-<%= render 'shim' %>
-<%= render 'navigation' %>
-<%= render 'header' %>
+<%= render 'shared/shim' %>
+<%= render 'shared/navigation' %>
+<%= render 'shared/header' %>
 
 <div class="container">
   <div class="row">
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= render 'footer' %>
+<%= render 'shared/footer' %>
