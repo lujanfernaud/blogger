@@ -6,6 +6,8 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
+    	<div class="alert alert-danger"><%= flash.notice %></div>
+
 			<%= form_tag author_sessions_path, method: :post do %>
 				<div class="row">
 					<div class="form-group col-xs-12">

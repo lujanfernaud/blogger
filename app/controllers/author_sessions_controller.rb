@@ -6,10 +6,11 @@ class AuthorSessionsController < ApplicationController
 
   def create
     if login(params[:email], params[:password])
-      redirect_back_or_to(articles_path, notice: 'Logged in successfully.')
+      redirect_to(:root) && return if controller_name == 'author_sessions'
+      redirect_to(:back)
     else
-      flash.now.alert = 'Login failed.'
-      render action: new
+      flash[:notice] = 'Login failed. Incorrect email or password.'
+      render action: 'new'
     end
   end
 
