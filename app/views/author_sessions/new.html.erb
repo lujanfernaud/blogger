@@ -1,21 +1,39 @@
-<h1>Login</h1>
+<%= render 'shared/shim' %>
+<%= render 'shared/navigation' %>
+<%= render 'shared/header' %>
 
-<%= form_tag author_sessions_path, method: :post do %>
-	<div class="field">
-		<%= label_tag :email %>
-		<%= text_field_tag :email %>
-		<br />
-	</div>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
 
-	<div class="field">
-		<%= label_tag :password %>
-		<%= password_field_tag :password %>
-		<br />
-	</div>
-	
-	<div class="actions">
-		<%= submit_tag 'Login' %>
-	</div>
-<% end %>
+			<%= form_tag author_sessions_path, method: :post do %>
+				<div class="row">
+					<div class="form-group col-xs-12">
+						<%= label_tag :email %>
+						<%= text_field_tag :email %>
+					</div>
+				</div>
 
-<%= link_to 'Back', articles_path %>
+				<div class="row">
+					<div class="form-group col-xs-12">
+					<%= label_tag :password %>
+					<%= password_field_tag :password %>
+				</div>
+				</div>
+				
+				<div class="row">
+					<div class="form-group col-xs-12">
+					<%= submit_tag 'Login' %>
+					</div>
+				</div>
+			<% end %>
+
+			<%= link_to 'Back', articles_path %>
+
+    </div>
+  </div>
+</div>
+
+<br>
+
+<%= render 'shared/footer' %>
