@@ -6,3 +6,21 @@ body {
 p {
   line-height: 1.618;  
 }
+.navbar-default .navbar-brand {
+    color: #4F4F4F;
+}
+.navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+    color: #000;
+    background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #4F4F4F;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #000;
+    background-color: transparent;
+}
+.navbar-fixed-top {
+    top: 0;
+    border-width: 0px 0 12px;
+}
