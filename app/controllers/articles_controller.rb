@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_filter :require_login, except: [:index, :show, :popular]
+  before_filter :require_login, except: [:index, :show, :popular, :about]
 
   include ArticlesHelper
 
@@ -17,6 +17,9 @@ class ArticlesController < ApplicationController
 
   def popular
     @most_popular_articles = Article.all.sort_by(&:view_count).reverse.first(10)
+  end
+
+  def about
   end
 
   def new
