@@ -1,140 +1,149 @@
 <% if current_page?(root_path) %>
-    <header class="intro-header" style="background-image: 
-    url('/assets/clean_blog/home-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Blogger</h1>
-                    <hr class="small">
-                    <span class="subheading">Jumpstart Lab's Blogger Project</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
+	<header class="intro-header" style="background-image: 
+	url('/assets/clean_blog/home-bg.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="site-heading">
+					<h1>Blogger</h1>
+					<hr class="small">
+					<span class="subheading">Jumpstart Lab's Blogger Project</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+
 <% elsif current_page?(popular_path) %>
-    <header class="intro-header" style="background-image: 
-    url('/assets/clean_blog/about-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="page-heading">
-                    <h1>Most Popular Articles</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
+	<header class="intro-header" style="background-image: 
+	url('/assets/clean_blog/about-bg.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="page-heading">
+					<h1>Most Popular Articles</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+
 <% elsif current_page?(archive_index_path) %>
-    <header class="intro-header" style="background-image: 
-    url('/assets/clean_blog/about-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="page-heading">
-                    <h1>Archive</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
+	<header class="intro-header" style="background-image: 
+	url('/assets/clean_blog/about-bg.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="page-heading">
+					<h1>Archive</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+
 <% elsif controller.controller_name == 'archive' && controller.action_name == 'show' %>
-    <header class="intro-header" style="background-image: 
-    url('/assets/clean_blog/about-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="page-heading">
-                    <h1>Archive</h1>
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
+	<header class="intro-header" style="background-image: 
+	url('/assets/clean_blog/about-bg.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="page-heading">
+					<h1>Archive</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+
 <% elsif current_page?(about_path) %>
-    <header class="intro-header" style="background-image: 
-    url('/assets/clean_blog/about-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="page-heading">
-                    <h1>About Me</h1>
-                    <hr class="small">
-                    <span class="subheading">This is what I do.</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
+	<header class="intro-header" style="background-image: 
+	url('/assets/clean_blog/about-bg.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="page-heading">
+					<h1>About Me</h1>
+					<hr class="small">
+					<span class="subheading">This is what I do.</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+
 <% elsif current_page?(new_article_path) %>
-    <header class="intro-header" style="background-image: 
-    url('/assets/clean_blog/post-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>Create New Article</h1>                    
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
+	<header class="intro-header" style="background-image: 
+	url('/assets/clean_blog/post-bg.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-heading">
+					<h1>Create New Article</h1>                    
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+
 <% elsif controller.controller_name == 'articles' && controller.action_name == 'edit' %>
-    <header class="intro-header" style="background-image: 
-    url('/assets/clean_blog/post-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1>Edit Article</h1>                    
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
+	<header class="intro-header" style="background-image: 
+	url('/assets/clean_blog/post-bg.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="post-heading">
+					<h1>Edit Article</h1>                    
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+
 <% elsif controller.controller_name == 'articles' && controller.action_name == 'show' %>
-    <header class="intro-header" style="height: 700px; background-image: 
-    url('/assets/clean_blog/post-bg.jpg');">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-                <div class="post-heading">
-                    <h1><%= @article.title %></h1>
-                    <span class="meta">by <%= link_to @article.author.username, author_path(@article.author) %> on <%= @article.created_at.strftime('%b %d, %Y') %></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
+	<header class="intro-header" style="height: 700px; background-image: 
+	url('/assets/clean_blog/post-bg.jpg');">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
+				<div class="post-heading">
+					<h1><%= @article.title %></h1>
+					<span class="meta">by <%= link_to @article.author.username, author_path(@article.author) %> on <%= @article.created_at.strftime('%b %d, %Y') %></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+
 <% elsif current_page?(contact_path) %> 
-    <header class="intro-header" style="background-image: 
-    url('/assets/clean_blog/contact-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="page-heading">
-                    <h1>Contact Me</h1>
-                    <hr class="small">
-                    <span class="subheading">Have questions? I have answers (maybe).</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
+	<header class="intro-header" style="background-image: 
+	url('/assets/clean_blog/contact-bg.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="page-heading">
+					<h1>Contact Me</h1>
+					<hr class="small">
+					<span class="subheading">Have questions? I have answers (maybe).</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
+		
 <% else %>
-    <header class="intro-header" style="background-image: 
-    url('/assets/clean_blog/home-bg.jpg')">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <div class="site-heading">
-                    <h1>Blogger</h1>
-                    <hr class="small">
-                    <span class="subheading">Jumpstart Lab's Blogger Project</span>
-                </div>
-            </div>
-        </div>
-    </div>
-    </header>
+	<header class="intro-header" style="background-image: 
+	url('/assets/clean_blog/home-bg.jpg')">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="site-heading">
+					<h1>Blogger</h1>
+					<hr class="small">
+					<span class="subheading">Jumpstart Lab's Blogger Project</span>
+				</div>
+			</div>
+		</div>
+	</div>
+	</header>
 <% end %>
