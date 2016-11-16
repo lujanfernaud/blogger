@@ -6,7 +6,7 @@ class AuthorSessionsController < ApplicationController
 
   def create
     if login(params[:email], params[:password])
-      redirect_to(:root) && return if controller_name == 'author_sessions'
+      redirect_to(:root) && return if flash[:notice]
       redirect_to(:back)
     else
       flash[:notice] = 'Login failed. Incorrect email or password.'
@@ -16,6 +16,6 @@ class AuthorSessionsController < ApplicationController
 
   def destroy
     logout
-    redirect_to(:authors, notice: 'Logged out!')
+    redirect_to(:back)
   end
 end
