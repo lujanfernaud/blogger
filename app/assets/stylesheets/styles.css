@@ -27,12 +27,26 @@ p {
 .intro-header {
   margin-bottom: 0;
 }
-.post-heading {
+.intro-header .post-heading {
+  position: relative;
+  top: 455px;
+  background-color: white;
+  color: black;
   text-align: center;
+  padding: 70px 20px 52px;
 }
 .post-heading > .meta {
   margin-top: 20px;
 }
 .intro-header .post-heading .meta a {
     color: #000;
+}
+@media screen and (max-width: 767px) {
+  .intro-header .post-heading {
+    position: relative;
+    top: 544px;
+    background-color: white;
+    color: black;
+    padding: 40px 10px 15px;
+  } 
 }
