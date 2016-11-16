@@ -2,6 +2,7 @@ class AuthorSessionsController < ApplicationController
   before_filter :require_login, except: [:new, :create, :destroy]
 
   def new
+    redirect_to(:root) && return if logged_in?
   end
 
   def create
