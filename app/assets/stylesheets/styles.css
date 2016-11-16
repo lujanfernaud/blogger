@@ -24,3 +24,15 @@ p {
     top: 0;
     border-width: 0px 0 12px;
 }
+.intro-header {
+  margin-bottom: 0;
+}
+.post-heading {
+  text-align: center;
+}
+.post-heading > .meta {
+  margin-top: 20px;
+}
+.intro-header .post-heading .meta a {
+    color: #000;
+}
