@@ -25,6 +25,7 @@ p {
     border-width: 0px 0 12px;
 }
 .intro-header {
+  margin-top: 60px;
   margin-bottom: 0;
 }
 .intro-header .post-heading {
@@ -49,4 +50,15 @@ p {
     color: black;
     padding: 40px 10px 15px;
   } 
+}
+.intro-header .page-heading {
+    padding: 65px 0;
+  }
+.intro-header .page-heading h1 {
+  margin-top: 6px;
+  margin-bottom: 0;
+  font-size: 50px;
+}
+.sections-header {
+  background: #001D40;
 }

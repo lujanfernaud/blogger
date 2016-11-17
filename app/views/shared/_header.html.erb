@@ -15,8 +15,7 @@
 	</header>
 
 <% elsif current_page?(popular_path) %>
-	<header class="intro-header" style="background-image: 
-	url('/assets/clean_blog/about-bg.jpg')">
+	<header class="intro-header sections-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -29,8 +28,7 @@
 	</header>
 
 <% elsif current_page?(archive_index_path) %>
-	<header class="intro-header" style="background-image: 
-	url('/assets/clean_blog/about-bg.jpg')">
+	<header class="intro-header sections-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -43,8 +41,7 @@
 	</header>
 
 <% elsif controller.controller_name == 'archive' && controller.action_name == 'show' %>
-	<header class="intro-header" style="background-image: 
-	url('/assets/clean_blog/about-bg.jpg')">
+	<header class="intro-header sections-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -73,12 +70,11 @@
 	</header>
 
 <% elsif current_page?(new_article_path) %>
-	<header class="intro-header" style="background-image: 
-	url('/assets/clean_blog/post-bg.jpg')">
+	<header class="intro-header sections-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="post-heading">
+				<div class="page-heading">
 					<h1>Create New Article</h1>                    
 				</div>
 			</div>
@@ -87,12 +83,11 @@
 	</header>
 
 <% elsif controller.controller_name == 'articles' && controller.action_name == 'edit' %>
-	<header class="intro-header" style="background-image: 
-	url('/assets/clean_blog/post-bg.jpg')">
+	<header class="intro-header sections-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="post-heading">
+				<div class="page-heading">
 					<h1>Edit Article</h1>                    
 				</div>
 			</div>
@@ -116,8 +111,7 @@
 	</header>
 
 <% elsif current_page?(contact_path) %> 
-	<header class="intro-header" style="background-image: 
-	url('/assets/clean_blog/contact-bg.jpg')">
+	<header class="intro-header sections-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -130,7 +124,7 @@
 		</div>
 	</div>
 	</header>
-		
+
 <% else %>
 	<header class="intro-header" style="background-image: 
 	url('/assets/clean_blog/home-bg.jpg')">
