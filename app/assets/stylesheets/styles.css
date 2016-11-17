@@ -2,6 +2,7 @@ body {
   font-family: Georgia,"Times New Roman",Times,serif;
   font-size: 24px;
   line-height: 1.618;
+  /*background: #dfe3e5;*/
 }
 p {
   line-height: 1.618;  
@@ -33,7 +34,7 @@ p {
   margin-bottom: 0;
 }
 .sections-header {
-  margin-bottom: 50px;
+  margin-bottom: 60px;
   background: #001D40;
 }
 .intro-header .post-heading {
@@ -60,10 +61,54 @@ p {
   } 
 }
 .intro-header .page-heading {
-    padding: 65px 0;
+    padding: 70px 0;
   }
 .intro-header .page-heading h1 {
-  margin-top: 6px;
+  margin-top: 8px;
   margin-bottom: 0;
-  font-size: 50px;
+  font-size: 65px;
 }
+.col-position {
+  padding-right: 0;
+  line-height: 1.190;
+  text-align: right;
+  font-size: 90px;
+  font-weight: 800;
+}
+@media screen and (max-width: 579px) {
+  .col-position {
+    text-align: center;
+  }
+  .post-meta {
+    text-align: center;
+  }
+}
+.col-article {
+  padding-left: 40px;
+}
+@media screen and (max-width: 579px) {
+  .col-article {
+    text-align: center;
+    padding-left: 15px;
+  }
+}
+.col-views {
+  vertical-align: bottom;
+  padding-right: 8px;
+}
+.border-bottom {
+  border-bottom: 1px solid #ddd;
+}
+.custom-table > tbody > tr > td {
+  border-top: 0;
+  padding-right: disable;
+}
+.hr-popular {
+  margin-top: 12px;
+}
+/*.article-background {
+  padding-left: 96px;
+  padding-right: 96px;
+  background: white;
+}
+*/
