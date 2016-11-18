@@ -2,7 +2,7 @@ body {
   font-family: Georgia,"Times New Roman",Times,serif;
   font-size: 24px;
   line-height: 1.618;
-  /*background: #dfe3e5;*/
+  background: #F8F8F8;
 }
 p {
   line-height: 1.618;  
@@ -43,7 +43,7 @@ p {
   background-color: white;
   color: black;
   text-align: center;
-  padding: 70px 20px 52px;
+  padding: 70px 20px 53px;
 }
 .post-heading > .meta {
   margin-top: 20px;
@@ -57,7 +57,7 @@ p {
     top: 544px;
     background-color: white;
     color: black;
-    padding: 40px 10px 15px;
+    padding: 40px 10px 16px;
   } 
 }
 .intro-header .page-heading {
@@ -106,9 +106,21 @@ p {
 .hr-popular {
   margin-top: 12px;
 }
-/*.article-background {
-  padding-left: 96px;
-  padding-right: 96px;
+.article-background {
+  padding-top: 1px;
+  padding-left: 98px;
+  padding-right: 98px;
   background: white;
 }
-*/
+@media screen and (max-width: 991px) {
+  .article-background {
+    padding-left: 78px;
+    padding-right: 78px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .article-background {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+}
