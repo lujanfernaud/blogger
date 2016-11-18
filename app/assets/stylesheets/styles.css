@@ -135,6 +135,20 @@ p {
 .footer {
   color: #fff;
   background: #001D40;
-  padding: 50px 0 65px;
+  padding: 70px 0;
   /*border-top: 12px solid #e7e7e7;*/
+}
+footer ul > li > a {
+  color: #FAFAFA;
+}
+footer ul > li > a:hover,
+footer ul > li > a:focus {
+  color: white;
+}
+.fa-dark {
+  color: #4F4F4F;
+}
+.fa-dark:hover,
+.fa-dark:focus {
+  color: #000;
 }
