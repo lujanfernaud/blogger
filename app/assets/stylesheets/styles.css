@@ -2,7 +2,8 @@ body {
   font-family: Georgia,"Times New Roman",Times,serif;
   font-size: 24px;
   line-height: 1.618;
-  background: #FAFAFA;
+  /*background: #FAFAFA;*/
+  background: white;
 }
 p {
   line-height: 1.618;  
@@ -30,8 +31,13 @@ p {
   margin-bottom: 0;
 }
 .post-header {
-  height: 700px;
-  margin-bottom: 0;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 700px;
+  text-align: center;
+  background: #001D40;
+  margin-bottom: 9px;
 }
 .sections-header {
   margin-bottom: 0;
@@ -105,6 +111,12 @@ p {
 }
 .hr-popular {
   margin-top: 12px;
+}
+.hr-article {
+  margin: 51px auto 0;
+  bottom: 0;
+  width: 8%;
+  border-top: 1px solid #000;
 }
 .sections-background, 
 .article-background {

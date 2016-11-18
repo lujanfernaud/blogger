@@ -9,13 +9,6 @@
 									col-sm-12 col-xs-12">
       	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 article-background">
 
-					<% if @article.image.exists? %>
-						<p>
-							<%= image_tag @article.image.url %>
-						</p>
-						<br>
-					<% end %>
-
 					<p><%= @article.body %></p>
 					<br>
 					<p>
@@ -39,7 +32,8 @@
 
 					<br>
 					<%= link_to "Articles List", articles_path %> | <%= link_to "Tags List", tags_path %>
-
+					<br>
+					
 				</div>
 			</div>
 		</div>
