@@ -17,6 +17,7 @@ class ArticlesController < ApplicationController
 
   def popular
     @most_popular_articles = Article.all.sort_by(&:view_count).reverse.first(10)
+    @title = "Most Popular Articles"
   end
 
   def about
@@ -24,10 +25,12 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
+    @title   = "New article"
   end
 
   def edit
     @article = Article.find(params[:id])
+    @title   = "Edit article"
   end
 
   def update

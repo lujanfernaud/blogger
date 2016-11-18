@@ -3,9 +3,11 @@ class ArchiveController < ApplicationController
 
   def index
     @articles_by_year_and_month = group_articles_by_year_and_month
+    @title = "Archive"
   end
 
   def show
+    @title = "Archive"
     check_if_year_or_month
 
     if @month

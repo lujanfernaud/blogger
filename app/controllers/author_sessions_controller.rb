@@ -10,6 +10,7 @@ class AuthorSessionsController < ApplicationController
       redirect_to(:root) && return if flash[:notice]
       redirect_to(:back)
     else
+      @title = "Login"
       flash[:notice] = 'Login failed. Incorrect email or password.'
       render action: 'new'
     end
