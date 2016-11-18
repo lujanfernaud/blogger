@@ -1,6 +1,21 @@
-<h1>Editing Author</h1>
+<%= render 'shared/shim' %>
+<%= render 'shared/navigation' %>
+<%= render 'shared/header' %>
 
-<%= render 'form' %>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 
+                col-sm-12 col-xs-12">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section-background">
 
-<%= link_to 'Show', @author %> |
-<%= link_to 'Back', authors_path %>
+        <%= render 'form' %>
+
+        <%= link_to 'Show', @author %> |
+        <%= link_to 'Back', authors_path %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'shared/footer' %>

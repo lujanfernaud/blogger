@@ -39,20 +39,20 @@ p {
   background: #001D40;
   margin-bottom: 9px;
 }
-.sections-header {
+.section-header {
   margin-bottom: 0;
   background: #001D40;
 }
 .intro-header .post-heading {
   position: relative;
-  top: 355px;
+  top: 340px;
   background-color: white;
   color: black;
   text-align: center;
   padding: 70px 20px 53px;
 }
 .post-heading > .meta {
-  margin-top: 20px;
+  margin-top: 35px;
 }
 .intro-header .post-heading .meta a {
     color: #000;
@@ -115,10 +115,10 @@ p {
 .hr-article {
   margin: 51px auto 0;
   bottom: 0;
-  width: 8%;
+  width: 4%;
   border-top: 1px solid #000;
 }
-.sections-background, 
+.section-background, 
 .article-background {
   padding-left: 98px;
   padding-right: 98px;
@@ -126,19 +126,21 @@ p {
 }
 .article-background {
   padding-top: 1px;
+  padding-bottom: 61px;
 }
-.sections-background {
+.section-background {
   padding-top: 61px;
+  padding-bottom: 61px;
 }
 @media screen and (max-width: 991px) {
-  .sections-background,
+  .section-background,
   .article-background {
     padding-left: 78px;
     padding-right: 78px;
   }
 }
 @media screen and (max-width: 767px) {
-  .sections-background,
+  .section-background,
   .article-background {
     padding-left: 64px;
     padding-right: 64px;

@@ -10,7 +10,6 @@
       	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 article-background">
 
 					<p><%= @article.body %></p>
-					<br>
 					<p>
 						Tags:
 						<% @article.tags.each do |tag| %>
@@ -18,22 +17,21 @@
 						<% end %>
 					</p>
 
-					<br>
 					<% if logged_in? and is_owner? %>
 						<%= link_to "Edit", edit_article_path(@article) %> | 
 						<%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
-						<br />
-						<br />
 					<% end %>
 
-					<h3>Comments (<%= @article.comments.size %>)</h3>
-					<%= render partial: 'articles/comment', collection: @article.comments %>
+					<% if @article.comments.size != 0 %>
+						<h3>Comments (<%= @article.comments.size %>)</h3>
+						<%= render partial: 'articles/comment', collection: @article.comments %>
+					<% end %>
 					<%= render partial: 'comments/form' %>
 
-					<br>
+					<p>
 					<%= link_to "Articles List", articles_path %> | <%= link_to "Tags List", tags_path %>
-					<br>
-					
+					</p>
+
 				</div>
 			</div>
 		</div>

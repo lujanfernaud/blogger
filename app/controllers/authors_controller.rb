@@ -12,16 +12,20 @@ class AuthorsController < ApplicationController
 
   def index
     @authors = Author.all
+    @title   = "Authors"
   end
 
   def show
+    @title = set_author.username
   end
 
   def new
     @author = Author.new
+    @title  = "New author"
   end
 
   def edit
+    @title = "Editing: #{set_author.username}"
   end
 
   def create

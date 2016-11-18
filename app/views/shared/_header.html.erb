@@ -15,7 +15,7 @@
 	</header>
 
 <% elsif current_page?(popular_path) %>
-	<header class="intro-header sections-header">
+	<header class="intro-header section-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -28,7 +28,7 @@
 	</header>
 
 <% elsif current_page?(archive_index_path) %>
-	<header class="intro-header sections-header">
+	<header class="intro-header section-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -41,7 +41,7 @@
 	</header>
 
 <% elsif controller.controller_name == 'archive' && controller.action_name == 'show' %>
-	<header class="intro-header sections-header">
+	<header class="intro-header section-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -70,7 +70,7 @@
 	</header>
 
 <% elsif current_page?(new_article_path) %>
-	<header class="intro-header sections-header">
+	<header class="intro-header section-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -83,7 +83,7 @@
 	</header>
 
 <% elsif controller.controller_name == 'articles' && controller.action_name == 'edit' %>
-	<header class="intro-header sections-header">
+	<header class="intro-header section-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -96,7 +96,7 @@
 	</header>
 
 <% elsif controller.controller_name == 'articles' && controller.action_name == 'show' %>
-	<header class="intro-header post-header" <%= show_image_if_exists %>>
+	<header class="intro-header post-header" <%= show_image_if_exists %>+>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
@@ -111,7 +111,7 @@
 	</header>
 
 <% elsif current_page?(contact_path) %> 
-	<header class="intro-header sections-header">
+	<header class="intro-header section-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
@@ -126,15 +126,12 @@
 	</header>
 
 <% else %>
-	<header class="intro-header" style="background-image: 
-	url('/assets/clean_blog/home-bg.jpg')">
+	<header class="intro-header section-header">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="site-heading">
-					<h1>Blogger</h1>
-					<hr class="small">
-					<span class="subheading">Jumpstart Lab's Blogger Project</span>
+				<div class="page-heading">
+					<h1><%= @title || "Section" %></h1>
 				</div>
 			</div>
 		</div>

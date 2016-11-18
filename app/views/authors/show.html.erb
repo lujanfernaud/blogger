@@ -1,24 +1,35 @@
-<p id="notice"><%= notice %></p>
+<%= render 'shared/shim' %>
+<%= render 'shared/navigation' %>
+<%= render 'shared/header' %>
 
-<h1><%= @author.username %></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 
+                col-sm-12 col-xs-12">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section-background">
 
-<p>Email: <%= @author.email %></p>
+				<p id="notice"><%= notice %></p>
 
-<% if @author.has_articles? %>
-	<br />
-	<h2>Articles</h2>
-	<br />
+				<p>Email: <%= @author.email %></p>
 
-	<ul>
-		<% @author.articles.each do |article| %>
-			<li>· <%= link_to article.title, article_path(article) %></li>
-		<% end %>
-	</ul>
-	<br />
-<% end %>
+				<% if @author.has_articles? %>
+					<h2>Articles</h2>
 
-<br />
-<% if logged_in? %>
-	<%= link_to 'Edit', edit_author_path(@author) %> |
-<% end %>
-<%= link_to 'Back', authors_path %>
+					<ul>
+						<% @author.articles.each do |article| %>
+							<li><%= link_to article.title, article_path(article) %></li>
+						<% end %>
+					</ul>
+				<% end %>
+
+				<% if logged_in? %>
+					<%= link_to 'Edit', edit_author_path(@author) %> |
+				<% end %>
+				<%= link_to 'Back', authors_path %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'shared/footer' %>

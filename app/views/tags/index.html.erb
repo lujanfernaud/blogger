@@ -1,10 +1,24 @@
-<h1>Tags</h1>
+<%= render 'shared/shim' %>
+<%= render 'shared/navigation' %>
+<%= render 'shared/header' %>
 
-<ul id="tags">
-  <% @tags.each do |tag| %>
-  	<li># <%= link_to tag.name, tag_path(tag) %><% if logged_in? %> · <%= link_to "Delete tag", tag_path(tag), method: :delete, data: {confirm: "Really delete the '#{tag.name}' tag?"} %><% end %></li>
-  <% end %>
-</ul>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 
+                col-sm-12 col-xs-12">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section-background">
 
-<br />
-<%= link_to "Articles List", articles_path %>
+          <ul id="tags">
+            <% @tags.each do |tag| %>
+            	<li># <%= link_to tag.name, tag_path(tag) %><% if logged_in? %> · <%= link_to "Delete tag", tag_path(tag), method: :delete, data: {confirm: "Really delete the '#{tag.name}' tag?"} %><% end %></li>
+            <% end %>
+          </ul>
+
+          <%= link_to "Articles List", articles_path %>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<%= render 'shared/footer' %>
