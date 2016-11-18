@@ -2,7 +2,7 @@ body {
   font-family: Georgia,"Times New Roman",Times,serif;
   font-size: 24px;
   line-height: 1.618;
-  background: #F8F8F8;
+  background: #FAFAFA;
 }
 p {
   line-height: 1.618;  
@@ -132,9 +132,9 @@ p {
     padding-right: 64px;
   }
 }
-footer {
+.footer {
   color: #fff;
   background: #001D40;
   padding: 50px 0 65px;
-  border-width: 12px 0 0;
+  /*border-top: 12px solid #e7e7e7;*/
 }
