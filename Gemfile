@@ -28,6 +28,8 @@ gem 'rake', '~> 11.3.0'
 
 # Rake tasks to add Bootstrap, Font Awesome, and Start Bootstrap Landing Pages to a Rails app
 gem 'frontend-generators'
+# Use Font Awesome Rails
+gem "font-awesome-rails"
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
