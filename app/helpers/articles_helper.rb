@@ -7,4 +7,10 @@ module ArticlesHelper
   def is_owner?
     @article.author == current_user
   end
+
+  def show_image_if_exists
+    return unless @article.image.exists?
+    "style\=\"background\: url\(\'#{@article.image.url}\'\) center center no-repeat\;
+             background-size\: cover\;\"".html_safe
+  end
 end

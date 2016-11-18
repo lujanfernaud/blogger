@@ -96,14 +96,14 @@
 	</header>
 
 <% elsif controller.controller_name == 'articles' && controller.action_name == 'show' %>
-	<header class="intro-header post-header" style="background-image: 
-	url('/assets/clean_blog/post-bg.jpg');">
+	<header class="intro-header post-header" <%= show_image_if_exists %>>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
 				<div class="post-heading">
 					<h1><%= @article.title %></h1>
 					<span class="meta">by <%= link_to @article.author.username, author_path(@article.author) %> on <%= @article.created_at.strftime('%b %d, %Y') %></span>
+					<hr class="hr-article">
 				</div>
 			</div>
 		</div>
