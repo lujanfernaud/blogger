@@ -38,9 +38,9 @@
 					<div class="form-group col-xs-12">
 					<% if @article.image.exists? %>
 						<%= image_tag @article.image.url %><br />
-						<%= f.label :image, "Update Image" %><br />
+						<%= f.label :image, "Update Header Image" %><br />
 					<% else %>
-						<%= f.label :image, "Attach a New Image" %><br />
+						<%= f.label :image, "Upload Header Image" %><br />
 					<% end %>
 					<%= f.file_field :image %>
 					</div>
