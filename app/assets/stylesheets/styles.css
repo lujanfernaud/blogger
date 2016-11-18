@@ -34,7 +34,7 @@ p {
   margin-bottom: 0;
 }
 .sections-header {
-  margin-bottom: 60px;
+  margin-bottom: 0;
   background: #001D40;
 }
 .intro-header .post-heading {
@@ -106,19 +106,27 @@ p {
 .hr-popular {
   margin-top: 12px;
 }
+.sections-background, 
 .article-background {
-  padding-top: 1px;
   padding-left: 98px;
   padding-right: 98px;
   background: white;
 }
+.article-background {
+  padding-top: 1px;
+}
+.sections-background {
+  padding-top: 61px;
+}
 @media screen and (max-width: 991px) {
+  .sections-background,
   .article-background {
     padding-left: 78px;
     padding-right: 78px;
   }
 }
 @media screen and (max-width: 767px) {
+  .sections-background,
   .article-background {
     padding-left: 64px;
     padding-right: 64px;

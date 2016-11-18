@@ -4,7 +4,9 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 
+                  col-sm-12 col-xs-12">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sections-background">
 
         <% @most_popular_articles.each_with_index do |article, index| %>
         <div class="row">
@@ -20,9 +22,10 @@
         <hr class="hr-popular">
         <% end %>
 
-      <br>
-      <p class="text-center"><%= link_to "Go back to articles list", articles_path %></p>
+        <br>
+        <p class="text-center"><%= link_to "Go back to articles list", articles_path %></p>
 
+      </div>
     </div>
   </div>
 </div>
