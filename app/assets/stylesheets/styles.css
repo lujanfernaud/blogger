@@ -132,3 +132,9 @@ p {
     padding-right: 64px;
   }
 }
+footer {
+  color: #fff;
+  background: #001D40;
+  padding: 50px 0 65px;
+  border-width: 12px 0 0;
+}
