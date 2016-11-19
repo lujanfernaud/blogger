@@ -158,12 +158,20 @@ p {
 }
 .h2-comments {
   font-weight: 800;
+  padding-bottom: 5px;
 }
 .comments {
   padding-top: 0;
 }
 .comment > p {
   line-height: 1.4;
+}
+.comments-container hr:nth-last-child(1) {
+  border-top: 0;
+}
+.hr-comments-divider {
+  margin-top: 60px;
+  margin-bottom: 55px;
 }
 .post-a-comment {
   margin-top: 30px;
