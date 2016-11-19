@@ -118,37 +118,37 @@ p {
   width: 4%;
   border-top: 1px solid #000;
 }
-.section-background,
-.comments-background, 
-.article-background {
+.section-container,
+.comments-container, 
+.article-container {
   padding-left: 98px;
   padding-right: 98px;
   background: white;
 }
-.article-background {
+.article-container {
   padding-top: 1px;
   padding-bottom: 30px;
 }
-.section-background {
+.section-container {
   padding-top: 61px;
   padding-bottom: 61px;
 }
-.comments-background {
+.comments-container {
   padding-top: 30px;
   padding-bottom: 61px;
 }
 @media screen and (max-width: 991px) {
-  .section-background,
-  .comments-background,
-  .article-background {
+  .section-container,
+  .comments-container,
+  .article-container {
     padding-left: 78px;
     padding-right: 78px;
   }
 }
 @media screen and (max-width: 767px) {
-  .section-background,
-  .comments-background,
-  .article-background {
+  .section-container,
+  .comments-container,
+  .article-container {
     padding-left: 64px;
     padding-right: 64px;
   }

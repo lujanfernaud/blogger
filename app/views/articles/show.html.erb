@@ -7,7 +7,7 @@
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 
 									col-sm-12 col-xs-12">
-      	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 article-background">
+      	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 article-container">
 
 					<p><%= @article.body %></p>
 					<p>
@@ -33,7 +33,7 @@
     <div class="row">
       <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 
 									col-sm-12 col-xs-12">
-      	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comments-background">
+      	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comments-container">
 
 					<% if @article.comments.size != 0 %>
 						<div class="comments">
