@@ -1,5 +1,6 @@
 class ArticlesController < ApplicationController
   before_filter :require_login, except: [:index, :show, :popular, :about]
+  before_filter :find_article, only: [:show, :edit, :update, :destroy]
 
   include ArticlesHelper
 
@@ -8,7 +9,6 @@ class ArticlesController < ApplicationController
   end
 
   def show
-    @article = Article.find(params[:id])
     @article.increase_view_count
 
     @comment = Comment.new
@@ -25,16 +25,14 @@ class ArticlesController < ApplicationController
 
   def new
     @article = Article.new
-    @title   = "New article"
+    @title = "New article"
   end
 
   def edit
-    @article = Article.find(params[:id])
-    @title   = "Edit article"
+    @title = "Edit article"
   end
 
   def update
-    @article = Article.find(params[:id])
     @article.update(article_params)
 
     flash.notice = "Article '#{@article.title}' updated."
@@ -54,11 +52,16 @@ class ArticlesController < ApplicationController
   end
 
   def destroy
-    @article = Article.find(params[:id])
     @article.destroy
 
     flash.notice = "Article '#{@article.title}' deleted."
 
     redirect_to articles_path
+  end
+
+  private
+
+  def find_article
+    @article = Article.find(params[:id])
   end
 end
