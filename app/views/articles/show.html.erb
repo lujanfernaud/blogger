@@ -22,9 +22,24 @@
 						<%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
 					<% end %>
 
+				</div>
+			</div>
+		</div>
+	</div>
+</article>
+
+<section class="section-comments">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 
+									col-sm-12 col-xs-12">
+      	<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comments-background">
+
 					<% if @article.comments.size != 0 %>
-						<h3><%= pluralize(@article.comments.size, 'Comment') %></h3>
-						<%= render partial: 'articles/comment', collection: @article.comments %>
+						<div class="comments">
+							<h3 class="h2 h2-comments"><%= pluralize(@article.comments.size, 'Comment') %></h3>
+							<%= render partial: 'articles/comment', collection: @article.comments %>
+						</div>
 					<% end %>
 					<%= render partial: 'comments/form' %>
 
@@ -32,6 +47,6 @@
 			</div>
 		</div>
 	</div>
-</article>
+</section>
 
 <%= render 'shared/footer' %>

@@ -118,7 +118,8 @@ p {
   width: 4%;
   border-top: 1px solid #000;
 }
-.section-background, 
+.section-background,
+.comments-background, 
 .article-background {
   padding-left: 98px;
   padding-right: 98px;
@@ -126,10 +127,14 @@ p {
 }
 .article-background {
   padding-top: 1px;
-  padding-bottom: 61px;
+  padding-bottom: 30px;
 }
 .section-background {
   padding-top: 61px;
+  padding-bottom: 61px;
+}
+.comments-background {
+  padding-top: 30px;
   padding-bottom: 61px;
 }
 @media screen and (max-width: 991px) {
@@ -145,6 +150,21 @@ p {
     padding-left: 64px;
     padding-right: 64px;
   }
+}
+.section-comments {
+  border-top: 1px solid #eee;
+}
+.h2-comments {
+  font-weight: 800;
+}
+.comments {
+  padding-top: 0;
+}
+.comment > p {
+  line-height: 1.4;
+}
+.post-a-comment {
+  margin-top: 30px;
 }
 .footer {
   color: #fff;
@@ -165,4 +185,7 @@ footer ul > li > a:focus {
 .fa-dark:hover,
 .fa-dark:focus {
   color: #000;
+}
+.v-offset-10 {
+  padding-top: 10px;
 }

@@ -1,3 +1,5 @@
-<div>
-	<p class="comment"><%= comment.author_name %>: <%= comment.body %> (<%= distance_of_time_in_words(comment.article.created_at, comment.created_at) %>)</p>
+<div class="comment">
+	<p class="comment-author"><%= comment.author_name %> on <%= comment.created_at.strftime('%b %d, %Y') %></p>
+  <p class="comment-text"><%= comment.body %></p>
 </div>
+<hr>
