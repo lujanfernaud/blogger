@@ -4,24 +4,22 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 
-                  col-sm-12 col-xs-12">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section-container">
+    <div class="col-lg-8 col-lg-offset-2 col-md-8 col-md-offset-2 
+                  col-sm-10 col-xs-10">
+      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 archive-container">
 
       <% @articles_by_year_and_month.each do |year, month| %>
-        <br>
-        <h2><%= link_to year, archive_path(year) %></h2>
+        <h2 class="h1 h1-archive"><%= link_to year, archive_path(year) %></h2>
           <% month.each do |month, articles| %>
-            <h3><%= link_to month, archive_path([year, month]) %></h3>
-              <ul>
-                <% articles.each do |article| %>
-                  <li><%= link_to article.title, article_path(article) %></li>
-                <% end %>
-              </ul>
-            <% end %>
+            <h3 class="h2 h2-archive"><%= link_to month, archive_path([year, month]) %></h3>
+            <ul class="list-unstyled">
+              <% articles.each do |article| %>
+                <li><%= link_to article.title, article_path(article) %></li>
+              <% end %>
+            </ul>
+          <% end %>
       <% end %>
 
-      <br>
       <%= link_to 'Go back to articles list', articles_path %>
 
       </div>

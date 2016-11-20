@@ -119,26 +119,33 @@ p {
   border-top: 1px solid #000;
 }
 .section-container,
+.archive-container,
 .comments-container, 
 .article-container {
   padding-left: 98px;
   padding-right: 98px;
   background: white;
 }
-.article-container {
-  padding-top: 1px;
-  padding-bottom: 30px;
-}
 .section-container {
   padding-top: 61px;
   padding-bottom: 61px;
+}
+.archive-container {
+  padding-top: 61px;
+  padding-bottom: 61px;
+  text-align: center;
 }
 .comments-container {
   padding-top: 30px;
   padding-bottom: 61px;
 }
+.article-container {
+  padding-top: 1px;
+  padding-bottom: 30px;
+}
 @media screen and (max-width: 991px) {
   .section-container,
+  .archive-container,
   .comments-container,
   .article-container {
     padding-left: 78px;
@@ -147,11 +154,20 @@ p {
 }
 @media screen and (max-width: 767px) {
   .section-container,
+  .archive-container,
   .comments-container,
   .article-container {
     padding-left: 64px;
     padding-right: 64px;
   }
+}
+.h1-archive {
+  font-size: 50px;
+  font-weight: 800;
+}
+.h2-archive {
+  font-size: 35px;
+  font-weight: 800;
 }
 .section-comments {
   border-top: 1px solid #eee;
