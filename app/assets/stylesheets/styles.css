@@ -81,6 +81,15 @@ p {
   font-size: 90px;
   font-weight: 800;
 }
+.col-date {
+  padding: 20px;
+  line-height: 1.190;
+  font-size: 31px;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+  background: #001D40;
+}
 @media screen and (max-width: 579px) {
   .col-position {
     text-align: center;
@@ -133,7 +142,7 @@ p {
 .archive-container {
   padding-top: 61px;
   padding-bottom: 61px;
-  text-align: center;
+  /*text-align: center;*/
 }
 .comments-container {
   padding-top: 30px;
@@ -162,12 +171,26 @@ p {
   }
 }
 .h1-archive {
-  font-size: 50px;
+  font-size: 65px;
   font-weight: 800;
+  margin-top: 90px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+.h1-archive:first-child {
+  margin-top: 50px;
 }
 .h2-archive {
   font-size: 35px;
   font-weight: 800;
+}
+.post-preview-archive > a > .post-title {
+  font-size: 36px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.post-meta-top {
+  margin-bottom: 12px;
 }
 .section-comments {
   border-top: 1px solid #eee;
