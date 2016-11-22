@@ -7,14 +7,14 @@
 <div class="container">
   <div class="row">
     <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 
-                  col-sm-12 col-xs-12">
+                col-sm-12 col-xs-12">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section-container">
 
     	<% @articles.each do |article| %>
         <div class="post-preview">
           <%= link_to article_path(article) do %>
             <h2 class="post-title">
-                <%= article.title %>
+              <%= article.title %>
             </h2>
           <% end %>
           <p class="post-meta">by <%= link_to article.author.username, author_path(article.author) %> on <%= article.created_at.strftime('%b %d, %Y') %></p>

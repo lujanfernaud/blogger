@@ -11,7 +11,6 @@
       <% @articles_by_year_and_month.each do |year, month| %>
         <h2 class="h1 h1-archive"><%= link_to year, archive_path(year) %></h2>
           <% month.each do |month, articles| %>
-            <!-- <h3 class="h2 h2-archive"><%= link_to month, archive_path([year, month]) %></h3> -->
             <% articles.each do |article| %>
               <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-ms-2 col-xs-12 col-date">
