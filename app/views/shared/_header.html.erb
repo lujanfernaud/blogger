@@ -1,13 +1,12 @@
 <% if current_page?(root_path) %>
-	<header class="intro-header" style="background-image: 
-	url('/assets/clean_blog/home-bg.jpg')">
+	<header class="intro-header featured-header" <%= show_image_if_exists(@latest_article) %>>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+				<div class="latest-article">Latest article</div>
 				<div class="site-heading">
-					<h1>Blogger</h1>
-					<hr class="small">
-					<span class="subheading">Jumpstart Lab's Blogger Project</span>
+					<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
+					<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
 				</div>
 			</div>
 		</div>
@@ -31,7 +30,7 @@
 	</header>
 
 <% elsif controller.controller_name == 'articles' && controller.action_name == 'show' %>
-	<header class="intro-header post-header" <%= show_image_if_exists %>+>
+	<header class="intro-header post-header" <%= show_image_if_exists(@article) %>>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
