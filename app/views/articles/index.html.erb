@@ -10,6 +10,10 @@
                 col-sm-12 col-xs-12">
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section-container">
 
+      <div class="previous-articles">
+        <p>Previous articles</p>
+      </div>
+
     	<% @articles.each do |article| %>
         <div class="post-preview">
           <%= link_to article_path(article) do %>

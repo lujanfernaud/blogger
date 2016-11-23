@@ -3,7 +3,9 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="latest-article">Latest article</div>
+				<div class="latest-article">
+					<p>Latest article</p>
+				</div>
 				<div class="site-heading">
 					<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
 					<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
