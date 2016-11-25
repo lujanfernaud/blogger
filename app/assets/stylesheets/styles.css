@@ -128,13 +128,17 @@ p {
   background: #001D40;
 }
 .col-position {
-  padding-right: 0;
+  height: 114px;
+  padding: 0;
   line-height: 1.190;
-  text-align: right;
-  font-size: 90px;
+  font-size: 79px;
   font-weight: 800;
+  text-align: center;
+  color: white;
+  background: #001D40;
 }
 .col-date {
+  height: 114px;
   padding: 0;
   line-height: 1.190;
   font-size: 31px;
@@ -151,7 +155,8 @@ p {
   transition: filter 0.62s ease-in-out;
   filter: grayscale(100%);
 }
-.col-date:hover .image-background {
+.col-date:hover .image-background,
+.col-position:hover .image-background {
   filter: grayscale(0);
 }
 .color-overlay {
@@ -167,17 +172,25 @@ p {
   z-index: 3;
   opacity: 1;
 }
-.text-overlay > p {
+.col-date > .text-overlay > p,
+.col-position > .text-overlay > p {
   margin: 0;
-  padding: 20px;
   line-height: 1.19;
+}
+.col-date > .text-overlay > p {
+  padding: 20px;
+}
+.col-position > .text-overlay > p {
+  padding: 9px;
 }
 .color-overlay,
 .text-overlay {
   transition: opacity 0.5s ease-in-out;
 }
 .col-date:hover .color-overlay,
-.col-date:hover .text-overlay {
+.col-date:hover .text-overlay,
+.col-position:hover .color-overlay,
+.col-position:hover .text-overlay {
   opacity: 0;
 }
 @media screen and (max-width: 579px) {
