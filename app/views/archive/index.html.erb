@@ -14,7 +14,11 @@
             <% articles.each do |article| %>
               <div class="row">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-ms-2 col-xs-12 col-date">
-                  <%= article.created_at.strftime('%b %d') %>
+                  <div class="image-background" <%= show_image_if_exists(article) %>></div>
+                  <div class="color-overlay"></div>
+                  <div class="text-overlay">
+                    <p><%= article.created_at.strftime('%b %d') %></p>
+                  </div>
                 </div>
                 <div class="col-lg-10 col-md-10 col-sm-10 col-ms-10 col-xs-12 col-article post-preview">
                   <h2 class="post-title"><%= link_to article.title, article_path(article) %></h2>
