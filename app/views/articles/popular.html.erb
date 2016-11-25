@@ -18,8 +18,10 @@
             <p class="post-meta">by <%= link_to article.author.username, author_path(article.author) %>
                on <%= article.created_at.strftime('%b %d, %Y') %> | <%= article.view_count %> views</p>
           </div>
+        </div>      
+        <div class="row">
+          <hr class="hr-popular">
         </div>
-        <hr class="hr-popular">
         <% end %>
 
         <br>
