@@ -130,6 +130,10 @@ p {
 .row-article:focus {
   background: #f2f2f2;
 }
+.row-article a:hover,
+.row-article a:focus {
+  color: #404040 !important;
+}
 .col-image {
   height: 114px;
   background: #001D40;
