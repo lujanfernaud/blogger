@@ -9,7 +9,7 @@
       <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section-container">
 
         <% @most_popular_articles.each_with_index do |article, index| %>
-        <div class="row">
+        <div class="row row-article">
           <div class="col-lg-2 col-md-2 col-sm-2 col-ms-2 col-xs-12 col-position">
             <div class="image-background" <%= show_image_if_exists(article) %>></div>
             <div class="color-overlay"></div>

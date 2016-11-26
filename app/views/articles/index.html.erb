@@ -17,7 +17,7 @@
       </div>
 
     	<% @articles.each do |article| %>
-      <div class="row">
+      <div class="row row-article">
         <div class="col-lg-2 col-md-2 col-sm-2 col-ms-2 col-xs-12 col-image" <%= show_image_if_exists(article) %>>    
         </div>
         <div class="col-lg-10 col-md-10 col-sm-10 col-ms-10 col-xs-12 col-article post-preview">
@@ -31,7 +31,7 @@
       <% end %>
 
       <div class="row">
-        <div class="want-more">
+        <div class="want-more text-center">
           <p>Want more? <%= link_to 'Check the archive!', archive_index_path %></p>
         </div>
       </div>

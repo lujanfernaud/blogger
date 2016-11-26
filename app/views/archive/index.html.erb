@@ -12,7 +12,7 @@
         <h2 class="h1 h1-archive"><%= link_to year, archive_path(year) %></h2>
           <% month.each do |month, articles| %>
             <% articles.each do |article| %>
-              <div class="row">
+              <div class="row row-article">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-ms-2 col-xs-12 col-date">
                   <div class="image-background" <%= show_image_if_exists(article) %>></div>
                   <div class="color-overlay"></div>
