@@ -6,7 +6,7 @@ class ArticlesController < ApplicationController
 
   def index
     @latest_article = Article.last
-    @articles = Article.all.reverse[1..7]
+    @articles = Article.all.reverse[1..6]
   end
 
   def show
