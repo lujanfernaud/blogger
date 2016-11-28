@@ -41,7 +41,7 @@
 				<div class="post-heading">
 					<h1><%= @article.title %></h1>
 					<span class="meta">by <%= link_to @article.author.username, author_path(@article.author) %> on <%= @article.created_at.strftime('%b %d, %Y') %></span>
-					<hr class="hr-article">
+					<hr class="hr-small hr-article-heading">
 				</div>
 			</div>
 		</div>

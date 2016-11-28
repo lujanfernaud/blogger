@@ -84,8 +84,8 @@ p {
   /*background-color: #f2f2f2;*/
   padding: 5px 14px;
   margin-top: 0;
-  margin-bottom: 64px;
-  /*margin-bottom: 0;*/
+  /*margin-bottom: 64px;*/
+  margin-bottom: 0;
 }
 .post-header {
   position: relative;
@@ -248,10 +248,15 @@ p {
   margin-top: 23px;
   margin-bottom: 23px;
 }
-.hr-article {
+.hr-small {
+  width: 4%;
+}
+.hr-previous-articles {
+  margin-bottom: 64px;
+}
+.hr-article-heading {
   margin: 51px auto 0;
   bottom: 0;
-  width: 4%;
   border-top: 1px solid #000;
 }
 .section-container,
