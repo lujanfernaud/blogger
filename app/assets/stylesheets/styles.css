@@ -2,7 +2,6 @@ body {
   font-family: Georgia,"Times New Roman",Times,serif;
   font-size: 24px;
   line-height: 1.618;
-  /*background: #FAFAFA;*/
   background: white;
 }
 p {
@@ -236,10 +235,6 @@ p {
 .border-bottom {
   border-bottom: 1px solid #ddd;
 }
-/*.custom-table > tbody > tr > td {
-  border-top: 0;
-  padding-right: disable;
-}*/
 .hr-index {
   margin-top: 23px;
   margin-bottom: 23px;
@@ -319,11 +314,6 @@ p {
   font-size: 35px;
   font-weight: 800;
 }
-/*.post-preview-archive > a > .post-title {
-  font-size: 36px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}*/
 .post-preview > .post-title {
   margin-top: 24px;
 }
@@ -363,7 +353,6 @@ p {
   color: #fff;
   background: #001D40;
   padding: 70px 0;
-  /*border-top: 12px solid #e7e7e7;*/
 }
 footer ul > li > a {
   color: #FAFAFA;
