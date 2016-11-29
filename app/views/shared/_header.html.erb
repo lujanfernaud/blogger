@@ -1,78 +1,88 @@
 <% if current_page?(root_path) %>
 	<header class="intro-header featured-header" <%= show_image_if_exists(@latest_article) %>>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="row">
-					<div class="latest-article">
-						<p>Latest article</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					
+					<div class="row">
+						<div class="latest-article">
+							<p>Latest article</p>
+						</div>
+						<div class="site-heading">
+							<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
+							<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
+						</div>
 					</div>
-					<div class="site-heading">
-						<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
-						<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
-					</div>
+
 				</div>
 			</div>
 		</div>
-	</div>
 	</header>
 
 <% elsif current_page?(about_path) %>
 	<header class="intro-header" style="background-image: 
 	url('/assets/clean_blog/about-bg.jpg')">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="page-heading">
-					<h1>About Me</h1>
-					<hr class="small">
-					<span class="subheading">This is what I do.</span>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+					<div class="page-heading">
+						<h1>About Me</h1>
+						<hr class="small">
+						<span class="subheading">This is what I do.</span>
+					</div>
+
 				</div>
 			</div>
 		</div>
-	</div>
 	</header>
 
 <% elsif controller.controller_name == 'articles' && controller.action_name == 'show' %>
 	<header class="intro-header post-header" <%= show_image_if_exists(@article) %>>
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1">
-				<div class="post-heading">
-					<h1><%= @article.title %></h1>
-					<span class="meta">by <%= link_to @article.author.username, author_path(@article.author) %> on <%= @article.created_at.strftime('%b %d, %Y') %></span>
-					<hr class="hr-small hr-article-heading">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-1 col-xs-12">
+
+					<div class="post-heading">
+						<h1><%= @article.title %></h1>
+						<span class="meta">by <%= link_to @article.author.username, author_path(@article.author) %> on <%= @article.created_at.strftime('%b %d, %Y') %></span>
+						<hr class="hr-small hr-article-heading">
+					</div>
+
 				</div>
 			</div>
 		</div>
-	</div>
 	</header>
 
 <% elsif current_page?(contact_path) %> 
 	<header class="intro-header section-header">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="page-heading">
-					<h1>Contact Me</h1>
-					<hr class="small">
-					<span class="subheading">Have questions? I have answers (maybe).</span>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+					<div class="page-heading">
+						<h1>Contact Me</h1>
+						<hr class="small">
+						<span class="subheading">Have questions? I have answers (maybe).</span>
+					</div>
+
 				</div>
 			</div>
 		</div>
-	</div>
 	</header>
 
 <% else %>
 	<header class="intro-header section-header">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-				<div class="page-heading">
-					<h1><%= @title || "Section" %></h1>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+					<div class="page-heading">
+						<h1><%= @title || "Section" %></h1>
+					</div>
+
 				</div>
 			</div>
 		</div>
-	</div>
 	</header>
 <% end %>

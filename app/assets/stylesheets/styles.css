@@ -263,8 +263,8 @@ p {
 .archive-container,
 .comments-container, 
 .article-container {
-  padding-left: 98px;
-  padding-right: 98px;
+/*  padding-left: 98px;
+  padding-right: 98px;*/
   background: white;
 }
 .section-container {
@@ -287,7 +287,7 @@ p {
   padding-top: 1px;
   padding-bottom: 30px;
 }
-@media screen and (max-width: 991px) {
+/*@media screen and (max-width: 991px) {
   .section-container,
   .archive-container,
   .comments-container,
@@ -304,7 +304,7 @@ p {
     padding-left: 64px;
     padding-right: 64px;
   }
-}
+}*/
 .h1-archive {
   font-size: 65px;
   font-weight: 800;
