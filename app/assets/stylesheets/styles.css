@@ -77,9 +77,10 @@ p {
 }
 .previous-articles > p {
   display: inline-block;
-  /*color: white;*/
+  color: #616161;
   /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
-  font-size: 24px;
+  font-size: 22px;
+  text-transform: uppercase;
   /*background-color: #f2f2f2;*/
   padding: 5px 14px;
   margin-top: 0;
