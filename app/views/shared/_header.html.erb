@@ -25,6 +25,9 @@
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-1 col-xs-12">
 
+					<div class="row row-fa">
+						<i class="fa fa-chevron-down fa-inverse fa-3x" aria-hidden="true"></i>
+					</div>
 					<div class="post-heading">
 						<h1><%= @article.title %></h1>
 						<span class="meta">by <%= link_to @article.author.username, author_path(@article.author) %> on <%= @article.created_at.strftime('%b %d, %Y') %></span>

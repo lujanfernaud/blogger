@@ -360,6 +360,11 @@ footer ul > li > a:hover,
 footer ul > li > a:focus {
   color: white;
 }
+.row-fa {
+  position: absolute;
+  left: 0;
+  right: 0;
+}
 .fa-dark {
   color: #4F4F4F;
 }
