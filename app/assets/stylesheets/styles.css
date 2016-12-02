@@ -14,16 +14,26 @@ h1, h2, h3, h4, h5, h6 {
 h2, .h2 {
   font-size: 1.333em;
 }
+a {
+    color: #000;
+}
+a:hover,
+a:focus {
+    color: #000;
+}
 .navbar-default .navbar-brand {
-    color: #4F4F4F;
-    font-size: 0.75em;
+    /*color: #4F4F4F;*/
+    color: #000;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 1em;
 }
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #000;
     background-color: transparent;
 }
 .navbar-default .navbar-nav > li > a {
-    color: #4F4F4F;
+    /*color: #4F4F4F;*/
+    color: #000;
     font-size: 0.563em;
 }
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
@@ -31,7 +41,7 @@ h2, .h2 {
     background-color: transparent;
 }
 .navbar-custom .navbar-brand {
-    padding: 19px 20px 20px;
+    padding: 17px 20px 20px;
 }
 .navbar-fixed-top {
     top: 0;
@@ -90,7 +100,7 @@ h2, .h2 {
 }
 .previous-articles > p {
   display: inline-block;
-  color: #616161;
+  /*color: #616161;*/
   /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-size: 0.75em;
   text-transform: uppercase;
@@ -159,7 +169,7 @@ h2, .h2 {
 }
 .row-article a:hover,
 .row-article a:focus {
-  color: #404040 !important;
+  color: #000 !important;
 }
 .col-image {
   height: 114px;
@@ -336,13 +346,16 @@ h2, .h2 {
 .post-preview > .post-title {
   margin-top: 21px;
 }
-
 .post-preview > .post-meta {
-    color: #808080;
+    color: #000; 
     font-size: 0.75em;
     font-style: italic;
     margin-top: 0;
     margin-bottom: 16px;
+}
+.post-preview > .post-meta > a {
+    text-decoration: none;
+    color: #000;
 }
 .post-meta-top {
   margin-bottom: 12px;
