@@ -94,7 +94,7 @@ a:focus {
   font-size: 0.75em;
   color: white;
   /*background: #001D40;*/
-  background-color: rgba(0, 29, 64, 0.8);
+  background-color: rgba(0, 29, 64, 1);
   padding: 5px 14px;
   text-transform: uppercase;
 }
