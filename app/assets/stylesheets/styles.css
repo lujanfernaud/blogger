@@ -186,9 +186,15 @@ a:focus {
 .row-article {
   transition: all 0.03s ease;
 }
-.row-article:hover,
+/*.row-article:hover,
 .row-article:focus {
-  background: #f2f2f2;
+  background: #FAFAFA;
+}*/
+.row-article:hover .col-article a,
+.row-article:hover .col-article p,
+.row-article:focus .col-article a {
+  color: #000;
+  /*border-right: 4px solid #001D40;*/
 }
 .row-article a:hover,
 .row-article a:focus {
@@ -273,6 +279,7 @@ a:focus {
   }
 }
 .col-article {
+  height: 114px;
   padding-left: 23px;
 }
 @media screen and (max-width: 579px) {
@@ -289,12 +296,12 @@ a:focus {
   border-bottom: 1px solid #ddd;
 }
 .hr-index {
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .hr-popular {
-  margin-top: 23px;
-  margin-bottom: 23px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .hr-small {
   width: 4%;
@@ -366,11 +373,14 @@ a:focus {
   font-size: 1.333em;
   font-weight: 800;
 }
-.post-preview > .post-title {
+.post-preview > .post-title > a {
   margin-top: 21px;
+  /*color: #333333;*/
+  color: #000;
 }
 .post-preview > .post-meta {
-    color: #000; 
+    /*color: #333333; */
+    color: #000;
     font-size: 0.75em;
     font-style: italic;
     margin-top: 0;
@@ -378,6 +388,7 @@ a:focus {
 }
 .post-preview > .post-meta > a {
     text-decoration: none;
+    /*color: #333333;*/
     color: #000;
 }
 .post-meta-top {
