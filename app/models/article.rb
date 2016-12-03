@@ -5,8 +5,12 @@ class Article < ActiveRecord::Base
 
   belongs_to :author
 
-  has_attached_file :image
-  validates_attachment_content_type :image, :content_type => ["image/jpg", "image/jpeg", "image/png"]
+  has_attached_file :image,
+                    :styles => { :large => "1920x1920", :medium => "1024x1024",
+                    :small => "800x800", :extra_small => "300x300", :thumb => "200x200" }
+
+  validates_attachment_content_type :image,
+                                    :content_type => ["image/jpg", "image/jpeg", "image/png"]
 
   def tag_list
     tags.join(", ")

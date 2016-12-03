@@ -12,7 +12,7 @@
           <% @most_popular_articles.each_with_index do |article, index| %>
           <div class="row row-article">
             <div class="col-sm-2 col-xs-12 col-position">
-              <div class="image-background" <%= show_image_if_exists(article) %>></div>
+              <div class="image-background" <%= show_image_if_exists(article, :small) %>></div>
               <div class="color-overlay"></div>
               <div class="text-overlay">
                 <p><%= index + 1 %></p>

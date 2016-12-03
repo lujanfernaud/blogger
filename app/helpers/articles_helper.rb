@@ -8,9 +8,10 @@ module ArticlesHelper
     @article.author == current_user
   end
 
-  def show_image_if_exists(article)
+  def show_image_if_exists(article, size)
     return unless article.image.exists?
-    "style\=\"background\: \#001D40 url\(\'#{article.image.url}\'\) center center no-repeat\;
-             background-size\: cover\;\"".html_safe
+    "style\=
+      \"background\: \#001D40 url\(\'#{article.image.url(size)}\'\) center center no-repeat\;
+      background-size\: cover\;\"".html_safe
   end
 end
