@@ -22,8 +22,10 @@
 
         	<% @articles.each do |article| %>
           <div class="row row-article">
-            <div class="col-sm-2 col-xs-12 col-image" <%= show_image_if_exists(article, :small) %>>
-            </div>
+            <!-- Hidden in XS to show a very small thumbnail -->
+            <div class="col-sm-2 col-xs-12 hidden-xs col-image" <%= show_image_if_exists(article, :thumb) %>></div>
+            <!-- Visible in XS to show a wide image -->
+            <div class="col-sm-2 col-xs-12 visible-xs col-image" <%= show_image_if_exists(article, :small) %>></div>
             <div class="col-sm-10 col-xs-12 col-article post-preview">
               <h2 class="post-title"><%= link_to article.title, article_path(article) %></h2>
               <p class="post-meta">by <%= link_to article.author.username, author_path(article.author) %> on <%= article.created_at.strftime('%b %d, %Y') %></p>
