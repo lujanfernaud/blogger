@@ -24,6 +24,8 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+# Use Ckeditor as a text editor for articles
+gem 'ckeditor'
 # Use Paperclip for managing uploads
 gem 'paperclip'
 # Use Sorcery for authentication

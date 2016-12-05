@@ -12,3 +12,6 @@ Rails.application.config.assets.version = '1.0'
 
 # Assets for Start Bootstrap Clean Blog Theme
 Rails.application.config.assets.precompile += %w(clean_blog/manifest.js clean_blog/manifest.css)
+
+# Assets for Ckeditor
+Rails.application.config.assets.precompile += %w( ckeditor/filebrowser/images/gal_del.png )
