@@ -156,7 +156,7 @@ a:focus {
   font-size: 2.369em;
 }
 .intro-header .post-heading .meta {
-  margin-top: 35px;
+  margin-top: 45px;
   margin-bottom: 20px;
   font-family: 'Lora', 'Times New Roman', serif;
   font-style: italic;
@@ -304,7 +304,7 @@ a:focus {
   margin-bottom: 25px;
 }
 .hr-small {
-  width: 4%;
+  width: 7%;
 }
 .hr-previous-articles {
   margin-bottom: 64px;
