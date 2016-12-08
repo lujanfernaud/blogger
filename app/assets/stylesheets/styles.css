@@ -394,11 +394,25 @@ a:focus {
 .post-meta-top {
   margin-bottom: 12px;
 }
-form .field {
+form.new_author .field,
+form.edit_author .field {
   margin-bottom: 20px;
 }
-form .actions {
+form.new_author .submit,
+form.edit_author .submit {
   margin-top: 40px;
+}
+form.new_article .field,
+form.edit_article .field {
+  margin-bottom: 10px;
+}
+form.edit_article .field img {
+  margin-bottom: 18px;
+}
+form.new_article .submit,
+form.edit_article .submit {
+  margin-top: 20px;
+  margin-bottom: 40px;
 }
 .section-comments {
   border-top: 1px solid #eee;

@@ -1,59 +1,63 @@
-<div class="container">
+<div class="container v-offset-30">
   <div class="row">
     <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 
                   col-sm-12 col-xs-12">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 sections-container">
 
-			<%= form_for(@article, html: {multipart: true}) do |f| %>
-				<div id="error_explanation">
-					<ul>
-						<% @article.errors.full_messages.each do |error| %>
-							<li><%= error %></li>
+			<div class="row">
+	      <div class="col-xs-12 sections-container">
+
+				<%= form_for(@article, html: {multipart: true}) do |f| %>
+					<div id="error_explanation">
+						<ul>
+							<% @article.errors.full_messages.each do |error| %>
+								<li><%= error %></li>
+							<% end %>
+						</ul>
+					</div>
+
+					<div class="row field">
+						<div class="form-group col-xs-12">
+							<%= f.label :title %><br />
+							<%= f.text_field :title, placeholder: 'Title', class: 'form-control' %>
+						</div>
+					</div>
+
+					<div class="row field">
+						<div class="form-group col-xs-12">
+						<%= f.label :body %><br />
+						<%= f.cktext_area :body, placeholder: 'Article', class: 'form-control' %>
+						</div>
+					</div>
+
+					<div class="row field">
+						<div class="form-group col-xs-12">
+						<%= f.label :tag_list %><br />
+						<%= f.text_field :tag_list, placeholder: 'tag, tag', class: 'form-control' %>
+						</div>
+					</div>
+
+					<div class="row field">
+						<div class="form-group col-xs-12">
+						<% if @article.image.exists? %>
+							<%= f.label :image, "Update Header Image" %><br />
+							<%= image_tag @article.image.url(:extra_small) %><br />
+						<% else %>
+							<%= f.label :image, "Upload Header Image" %><br />
 						<% end %>
-					</ul>
-				</div>
-				
-				<div class="row">
-					<div class="form-group col-xs-12">
-						<%= f.label :title %><br />
-						<%= f.text_field :title, placeholder: 'Title', class: 'form-control' %>
+						<%= f.file_field :image %>
+						</div>
 					</div>
-				</div>
 
-				<div class="row">
-					<div class="form-group col-xs-12">
-					<%= f.label :body %><br />
-					<%= f.cktext_area :body, placeholder: 'Article', class: 'form-control' %>
+					<div class="row submit">
+						<div class="form-group col-xs-12">
+							<%= f.submit %>
+						</div>
 					</div>
-				</div>
+				<% end %>
 
-				<div class="row">
-					<div class="form-group col-xs-12">
-					<%= f.label :tag_list %><br />
-					<%= f.text_field :tag_list, placeholder: 'tag, tag', class: 'form-control' %>
-					</div>
 				</div>
-
-				<div class="row">
-					<div class="form-group col-xs-12">
-					<% if @article.image.exists? %>
-						<%= image_tag @article.image.url(:extra_small) %><br />
-						<%= f.label :image, "Update Header Image" %><br />
-					<% else %>
-						<%= f.label :image, "Upload Header Image" %><br />
-					<% end %>
-					<%= f.file_field :image %>
-					</div>
-				</div>
-
-				<div class="row">
-					<div class="form-group col-xs-12">
-						<%= f.submit %>
-					</div>
-				</div>
-			<% end %>
-
 			</div>
+
 		</div>
 	</div>
 </div>

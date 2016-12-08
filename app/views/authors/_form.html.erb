@@ -17,19 +17,23 @@
         <%= f.label :username %><br>
         <%= f.text_field :username %>
       </div>
+
       <div class="field">
         <%= f.label :email %><br>
         <%= f.text_field :email %>
       </div>
+
       <div class="field">
         <%= f.label :password %><br>
         <%= f.text_field :password, type: "password" %>
       </div>
+
       <div class="field">
         <%= f.label :password_confirmation %><br>
         <%= f.text_field :password_confirmation, type: "password" %>
       </div>
-      <div class="actions">
+
+      <div class="submit">
         <%= f.submit %>
       </div>
     <% end %>
