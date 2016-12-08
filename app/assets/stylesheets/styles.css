@@ -394,6 +394,12 @@ a:focus {
 .post-meta-top {
   margin-bottom: 12px;
 }
+form .field {
+  margin-bottom: 20px;
+}
+form .actions {
+  margin-top: 40px;
+}
 .section-comments {
   border-top: 1px solid #eee;
 }
@@ -451,4 +457,7 @@ footer .copyright {
 }
 .v-offset-10 {
   padding-top: 10px;
+}
+.v-offset-30 {
+  padding-top: 30px;
 }

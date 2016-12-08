@@ -4,22 +4,27 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 
-                col-sm-12 col-xs-12">
-      <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 section-container">
+    <div class="col-lg-8 col-lg-offset-2 col-xs-10 col-xs-offset-1">
 
-        <p id="notice"><%= notice %></p>
+      <div class="row">
+        <div class="col-xs-12 section-container">
 
-        <table id="authors">
+        <div class="row">
+          <div class="text-center">
+            <p id="notice"><%= notice %></p>
+          </div>
+        </div>
+
+        <table class="table" id="authors">
           <thead>
             <tr>
               <th>Username</th>
               <th>Email</th>
-              <th colspan="3"></th>
+              <th colspan="3">Actions</th>
             </tr>
           </thead>
 
-          <tbody>
+          <tbody class="table-striped">
             <% @authors.each do |author| %>
               <tr>
                 <td><%= author.username %></td>
@@ -32,9 +37,15 @@
           </tbody>
         </table>
 
-        <%= link_to 'New Author', new_author_path %>
+        <div class="row v-offset-30">
+          <div class="text-center">
+            <%= link_to 'New Author', new_author_path %>
+          </div>
+        </div>
 
+        </div>
       </div>
+
     </div>
   </div>
 </div>
