@@ -17,6 +17,7 @@ class AuthorsController < ApplicationController
 
   def show
     @title = set_author.username
+    @articles = @author.articles.reverse
   end
 
   def new
