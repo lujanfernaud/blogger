@@ -87,7 +87,7 @@ a:focus {
 }
 .featured-header .latest-article {
   position: absolute;
-  top: 357px;
+  top: 351px;
   margin: 0;
   /*left: 314px;*/
   /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
@@ -95,7 +95,7 @@ a:focus {
   color: white;
   /*background: #001D40;*/
   background-color: rgba(0, 29, 64, 1);
-  padding: 7px 14px;
+  padding: 10px 18px;
   text-transform: uppercase;
 }
 .latest-article > p {
