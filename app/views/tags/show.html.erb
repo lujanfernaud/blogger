@@ -9,17 +9,40 @@
       <div class="row">
         <div class="col-xs-12 section-container">
 
-          <ul id="articles">
-          	<% @tag.articles.each do |article| %>
-          		<li><%= link_to article.title, article_path(article) %></li>
-          	<% end %>
-          </ul>
+          <div class="row">
+            <div class="previous-articles">
+              <p>Articles</p>
+            </div>
+          </div>
+          <div class="row">
+            <hr class="hr-small hr-previous-articles">
+          </div>
 
-          <%= link_to "Tags List", tags_path %> | <%= link_to "Articles List", articles_path %>
+          <% @tag.articles.each do |article| %>
+            <div class="row row-article">
+              <!-- Hidden in XS to show a very small thumbnail -->
+              <div class="col-sm-2 col-xs-12 hidden-xs col-image" <%= show_image_if_exists(article, :thumb) %>></div>
+              <!-- Visible in XS to show a wide image -->
+              <div class="col-sm-2 col-xs-12 visible-xs col-image" <%= show_image_if_exists(article, :small) %>></div>
+              <div class="col-sm-10 col-xs-12 col-article post-preview">
+                <h2 class="post-title"><%= link_to article.title, article_path(article) %></h2>
+                <p class="post-meta">by <%= link_to article.author.username, author_path(article.author) %> on <%= article.created_at.strftime('%b %d, %Y') %></p>
+              </div>
+            </div>
+            <div class="row">
+              <hr class="hr-index">
+            </div>
+          <% end %>
 
-        </div>
-      </div>
-      
+          <div class="row">
+            <div class="container-bottom-links text-center">
+              <%= link_to "Tags List", tags_path %>
+            </div>
+          </div>
+
+        </div><!-- section-container -->
+      </div><!-- row -->
+
     </div>
   </div>
 </div>
