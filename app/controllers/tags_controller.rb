@@ -8,7 +8,8 @@ class TagsController < ApplicationController
 
   def show
     @tag = Tag.find(params[:id])
-    @title = "##{@tag.name}"
+    @title = "##{@tag.name.capitalize_all_words}"
+    # capitalize_all_words comes from /config/initializers/string.rb
   end
 
   def destroy
