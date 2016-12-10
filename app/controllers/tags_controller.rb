@@ -2,7 +2,7 @@ class TagsController < ApplicationController
   before_filter :require_login, only: [:destroy]
 
   def index
-    @tags  = Tag.all
+    @tags = Tag.all.sort { |a, b| a.name.downcase <=> b.name.downcase }
     @title = "Tags"
   end
 
