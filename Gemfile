@@ -30,6 +30,9 @@ gem 'ckeditor'
 gem 'paperclip'
 # Use Sorcery for authentication
 gem 'sorcery'
+
+# Use pry-byebug as a debugger
+gem 'pry-byebug'
 # Use specific version of Rake to solve some problems
 gem 'rake', '~> 11.3.0'
 
