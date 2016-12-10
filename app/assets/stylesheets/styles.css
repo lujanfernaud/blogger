@@ -255,7 +255,7 @@ a:focus {
   line-height: 1.19;
 }
 .col-date > .text-overlay > p {
-  padding: 19px;
+  padding: 19px 29px;
 }
 .col-position > .text-overlay > p {
   padding: 9px;
@@ -316,7 +316,7 @@ a:focus {
 }
 .section-container,
 .archive-container,
-.comments-container, 
+.comments-container,
 .article-container {
 /*  padding-left: 98px;
   padding-right: 98px;*/
