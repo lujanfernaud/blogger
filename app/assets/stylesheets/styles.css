@@ -109,17 +109,17 @@ a:focus {
   position: absolute;
   top: 349px;
   margin: 0;
+  /*background: #001D40;*/
+  background-color: rgba(0, 29, 64, 1);
+  padding: 11px 19px;
+}
+.featured-header .latest-article > p {
+  margin: 0;
   /*left: 314px;*/
   /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-size: 0.75em;
   color: white;
-  /*background: #001D40;*/
-  background-color: rgba(0, 29, 64, 1);
-  padding: 11px 19px;
   text-transform: uppercase;
-}
-.latest-article > p {
-  margin: 0;
 }
 .featured-header .site-heading {
   position: relative;
