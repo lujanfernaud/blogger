@@ -95,6 +95,10 @@ a:focus {
   top: 0;
   border-width: 0;
 }
+.full-height {
+  min-height: inherit;
+  height: inherit;
+}
 .intro-header {
   /*margin-top: 60px;*/
   margin-top: 0;
@@ -110,37 +114,41 @@ a:focus {
   background: #001D40;
   margin-bottom: 9px;
 }
-.featured-header .latest-article {
+.latest-article-container {
   position: absolute;
-  top: 349px;
+  bottom: 44px;
+  min-width: 100%;
+  width: 100%;
+}
+.latest-article-container .latest-article {
+  position: relative;
+  width: 7.71em;
   margin: 0;
-  /*background: #001D40;*/
   background-color: rgba(0, 29, 64, 1);
   /*padding: 11px 19px;*/
   padding: 0.4583em 0.7916em;
 }
-.featured-header .latest-article > p {
+.latest-article-container .latest-article > p {
   margin: 0;
-  /*left: 314px;*/
-  /*font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;*/
   font-size: 0.75em;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
 }
-.featured-header .site-heading {
+.latest-article-container .site-heading {
   position: relative;
-  top: 400px;
-  color: black;
-  background-color: #ffffff;
+  min-width: 100%;
+  width: 100%;
+  color: #000;
+  background-color: #fff;
   /*background-color: #F8F4F1;*/
   text-align: center;
   /*padding: 30px 20px 30px;*/
   padding: 1.25em 0.8333em 1.25em;
 }
-.featured-header .site-heading > h1 {
+.latest-article-container .site-heading > h1 {
   font-size: 1.777em;
 }
-.featured-header .site-heading .meta {
+.latest-article-container .site-heading .meta {
   font-family: 'Lora', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;

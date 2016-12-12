@@ -1,19 +1,21 @@
 <% if current_page?(root_path) %>
 	<!-- Visible only in XS to resize header image -->
 	<header class="visible-xs intro-header featured-header" <%= show_image_if_exists(@latest_article, :small) %>>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		<div class="container full-height">
+			<div class="row full-height">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 full-height">
 
-					<div class="row">
-						<div class="latest-article">
-							<p>Latest article</p>
+					<div class="row full-height">
+						<div class="latest-article-container">
+							<div class="latest-article">
+								<p>Latest article</p>
+							</div>
+							<div class="site-heading">
+								<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
+								<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
+							</div>
 						</div>
-						<div class="site-heading">
-							<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
-							<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
-						</div>
-					</div>
+					</div><!-- row full-height -->
 
 				</div>
    	  </div>
@@ -21,19 +23,21 @@
 	</header>
 	<!-- Visible only in SM and MD to resize header image -->
 	<header class="visible-sm visible-md intro-header featured-header" <%= show_image_if_exists(@latest_article, :medium) %>>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		<div class="container full-height">
+			<div class="row full-height">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 full-height">
 
-					<div class="row">
-						<div class="latest-article">
-							<p>Latest article</p>
+					<div class="row full-height">
+						<div class="latest-article-container">
+							<div class="latest-article">
+								<p>Latest article</p>
+							</div>
+							<div class="site-heading">
+								<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
+								<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
+							</div>
 						</div>
-						<div class="site-heading">
-							<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
-							<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
-						</div>
-					</div>
+					</div><!-- row full-height -->
 
 				</div>
    	  </div>
@@ -41,19 +45,21 @@
 	</header>
 	<!-- Hidden in XS, SM, and MD to resize header image -->
 	<header class="hidden-xs hidden-sm hidden-md intro-header featured-header" <%= show_image_if_exists(@latest_article, :large) %>>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+		<div class="container full-height">
+			<div class="row full-height">
+				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 full-height">
 
-					<div class="row">
-						<div class="latest-article">
-							<p>Latest article</p>
+					<div class="row full-height">
+						<div class="latest-article-container">
+							<div class="latest-article">
+								<p>Latest article</p>
+							</div>
+							<div class="site-heading">
+								<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
+								<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
+							</div>
 						</div>
-						<div class="site-heading">
-							<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
-							<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
-						</div>
-					</div>
+					</div><!-- row full-height -->
 
 				</div>
    	  </div>
