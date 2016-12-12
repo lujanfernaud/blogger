@@ -116,7 +116,8 @@ a:focus {
   margin: 0;
   /*background: #001D40;*/
   background-color: rgba(0, 29, 64, 1);
-  padding: 11px 19px;
+  /*padding: 11px 19px;*/
+  padding: 0.4583em 0.7916em;
 }
 .featured-header .latest-article > p {
   margin: 0;
@@ -133,7 +134,8 @@ a:focus {
   background-color: #ffffff;
   /*background-color: #F8F4F1;*/
   text-align: center;
-  padding: 30px 20px 30px;
+  /*padding: 30px 20px 30px;*/
+  padding: 1.25em 0.8333em 1.25em;
 }
 .featured-header .site-heading > h1 {
   font-size: 1.777em;
