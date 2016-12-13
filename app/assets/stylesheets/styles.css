@@ -238,6 +238,16 @@ a:focus {
 .row-article a:focus {
   color: #000 !important;
 }
+.post-preview > .post-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+@media (max-width: 991px) {
+  .post-preview > .post-title {
+    margin-top: 24px;
+    margin-bottom: 10px;
+  }
+}
 .col-image {
   height: 114px;
   background: #001D40;
