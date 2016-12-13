@@ -114,6 +114,12 @@ a:focus {
   background: #001D40;
   margin-bottom: 9px;
 }
+@media (max-width: 767px) {
+  .container-index > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .latest-article-container {
   position: absolute;
   bottom: 44px;
