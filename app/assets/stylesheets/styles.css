@@ -343,6 +343,7 @@ a:focus {
 }
 @media screen and (max-width: 767px) {
   .col-article {
+    height: auto;
     text-align: center;
     padding-left: 15px;
   }
@@ -357,6 +358,12 @@ a:focus {
 .hr-index {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .hr-index {
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
 }
 .hr-popular {
   margin-top: 25px;
