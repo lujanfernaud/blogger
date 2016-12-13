@@ -134,6 +134,11 @@ a:focus {
   /*padding: 11px 19px;*/
   padding: 0.4583em 0.7916em;
 }
+@media (max-width: 479px) {
+  .latest-article-container .latest-article {
+    width: 8.2em;
+  }
+}
 .latest-article-container .latest-article > p {
   margin: 0;
   font-size: 0.75em;
