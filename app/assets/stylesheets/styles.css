@@ -283,11 +283,6 @@ a:focus {
 .col-position {
   height: 114px;
   padding: 0;
-  line-height: 1.190;
-  font-size: 3.157em;
-  font-weight: 800;
-  text-align: center;
-  color: white;
   background: #001D40;
 }
 .col-date {
@@ -328,7 +323,11 @@ a:focus {
 .col-date > .text-overlay > p,
 .col-position > .text-overlay > p {
   margin: 0;
-  line-height: 1.19;
+  font-size: 3.157em;
+  line-height: 1.190;
+  font-weight: 800;
+  color: white;
+  text-align: center;
 }
 .col-date > .text-overlay > p {
   padding: 19px 29px;
