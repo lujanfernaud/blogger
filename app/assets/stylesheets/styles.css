@@ -114,6 +114,16 @@ a:focus {
   background: #001D40;
   margin-bottom: 9px;
 }
+@media (max-height: 767px) {
+  .featured-header {
+    min-height: 420px;
+  }
+}
+@media (max-height: 360px) {
+  .featured-header {
+    min-height: 260px;
+  }
+}
 @media (max-width: 767px) {
   .container-index > .row {
     margin-left: 0;
@@ -125,6 +135,11 @@ a:focus {
   bottom: 44px;
   min-width: 100%;
   width: 100%;
+}
+@media (max-height: 360px) {
+  .latest-article-container {
+    bottom: 15px;
+  }
 }
 .latest-article-container .latest-article {
   position: relative;
