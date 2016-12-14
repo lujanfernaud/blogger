@@ -319,6 +319,7 @@ a:focus {
   position: relative;
   z-index: 3;
   opacity: 1;
+  height: 114px;
 }
 .col-date > .text-overlay > p,
 .col-position > .text-overlay > p {
@@ -333,7 +334,27 @@ a:focus {
   padding: 19px 29px;
 }
 .col-position > .text-overlay > p {
-  padding: 9px;
+  padding: 10px;
+}
+@media (max-width: 991px) {
+  .col-position > .text-overlay > p {
+    padding: 15px;
+  }
+}
+@media (max-width: 767px) {
+  .col-position > .text-overlay > p {
+    padding: 19px;
+  }
+}
+@media (max-width: 479px) {
+  .col-position > .text-overlay > p {
+    padding: 23px;
+  }
+}
+@media (max-width: 319px) {
+  .col-position > .text-overlay > p {
+    padding: 26px;
+  }
 }
 .color-overlay,
 .text-overlay {
