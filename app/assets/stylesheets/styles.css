@@ -324,7 +324,6 @@ a:focus {
 .col-date > .text-overlay > p,
 .col-position > .text-overlay > p {
   margin: 0;
-  font-size: 3.157em;
   line-height: 1.190;
   font-weight: 800;
   color: white;
@@ -335,6 +334,7 @@ a:focus {
 }
 .col-position > .text-overlay > p {
   padding: 10px;
+  font-size: 3.157em;
 }
 @media (max-width: 991px) {
   .col-position > .text-overlay > p {
