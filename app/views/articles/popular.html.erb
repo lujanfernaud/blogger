@@ -2,7 +2,7 @@
 <%= render 'shared/navigation' %>
 <%= render 'shared/header' %>
 
-<div class="container">
+<div class="container container-popular">
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
 
@@ -23,7 +23,7 @@
               <p class="post-meta">by <%= link_to article.author.username, author_path(article.author) %>
                  on <%= article.created_at.strftime('%b %d, %Y') %> | <%= article.view_count %> views</p>
             </div>
-          </div>      
+          </div>
           <div class="row">
             <hr class="hr-popular">
           </div>

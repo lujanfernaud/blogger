@@ -125,7 +125,9 @@ a:focus {
   }
 }
 @media (max-width: 767px) {
-  .container-index > .row {
+  .container-index > .row,
+  .container-popular > .row,
+  .container-archive > .row {
     margin-left: 0;
     margin-right: 0;
   }
@@ -374,15 +376,16 @@ a:focus {
   margin-top: 25px;
   margin-bottom: 25px;
 }
-@media (max-width: 767px) {
-  .hr-index {
-    margin-top: 10px;
-    margin-bottom: 35px;
-  }
-}
 .hr-popular {
   margin-top: 25px;
   margin-bottom: 25px;
+}
+@media (max-width: 767px) {
+  .hr-index,
+  .hr-popular {
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
 }
 .hr-small {
   width: 7%;
