@@ -8,7 +8,7 @@ function adjustHeader() {
   var postHeadingTop = parseInt($(".post-heading").css("top"));
   var faHeight = $(".row-fa").outerHeight();
   var fontSize = parseInt($("body").css("font-size"));
-  $(".row-fa").css("top", postHeadingTop - faHeight - fontSize);
+  $(".row-fa").css("top", postHeadingTop - faHeight - (fontSize * 2));
 };
 
 $(document).on('turbolinks:load', function() {
@@ -17,7 +17,6 @@ $(document).on('turbolinks:load', function() {
 
 $(function () {
   $(window).on("load resize", function () {
-
   adjustHeader();
   });
 });
