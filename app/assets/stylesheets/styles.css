@@ -567,6 +567,11 @@ footer .copyright {
   left: 0;
   right: 0;
 }
+@media (max-height: 520px) {
+  .row-fa {
+    visibility: hidden;
+  }
+}
 .fa-dark {
   color: #4F4F4F;
 }
