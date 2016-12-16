@@ -1,3 +1,5 @@
+/* Using a 1.333 (3:4 - Perfect Fourth) ratio for scaling fonts. */
+
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 24px;
@@ -224,6 +226,11 @@ a:focus {
 }
 .intro-header .post-heading h1 {
   font-size: 2.369em;
+}
+@media (max-width: 360px), (max-height: 400px) {
+  .intro-header .post-heading h1 {
+    font-size: 1.777em;
+  }
 }
 .intro-header .post-heading .meta {
   margin-top: 45px;
