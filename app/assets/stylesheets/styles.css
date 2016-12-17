@@ -108,9 +108,9 @@ a:focus {
   top: 0;
   border-width: 0;
 }
-.navbar-collapse {
+/*.navbar-collapse {
   border-bottom: 2px solid #e7e7e7;
-}
+}*/
 .full-height {
   min-height: inherit;
   height: inherit;
