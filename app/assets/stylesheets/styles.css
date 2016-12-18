@@ -219,7 +219,7 @@ a:focus {
   height: 100%;
   text-align: center;
   background: #001D40;
-  margin-bottom: 9px;
+  /*margin-bottom: 9px;*/
 }
 .section-header {
   margin-bottom: 0;
@@ -442,13 +442,15 @@ a:focus {
 }
 .hr-article-heading {
   /*margin: -9px auto 78px;*/
-  margin: -0.375em auto 3.25em;
+  /*margin: -0.375em auto 3.25em;*/
+  margin: 0 auto 3.25em;
   bottom: 0;
   border-top: 1px solid #000;
 }
 @media (max-width: 767px) {
   .hr-article-heading {
-    margin: -0.375em auto 2em;
+    /*margin: -0.375em auto 2em;*/
+    margin: 0 auto 2em;
   }
 }
 .section-container,
