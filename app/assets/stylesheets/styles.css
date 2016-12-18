@@ -578,7 +578,11 @@ form.edit_article .submit {
   margin-top: 30px;
 }
 .container-bottom-links {
-  margin-top: 68px;
+  /*margin-top: 68px;*/
+  margin-top: 2.833em;
+}
+.container-bottom-links > p {
+  margin: 1.25em 0;
 }
 .footer {
   color: #fff;
