@@ -441,9 +441,15 @@ a:focus {
   margin-bottom: 64px;
 }
 .hr-article-heading {
-  margin: -9px auto 78px;
+  /*margin: -9px auto 78px;*/
+  margin: -0.375em auto 3.25em;
   bottom: 0;
   border-top: 1px solid #000;
+}
+@media (max-width: 767px) {
+  .hr-article-heading {
+    margin: -0.375em auto 2em;
+  }
 }
 .section-container,
 .archive-container,
