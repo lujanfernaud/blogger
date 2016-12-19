@@ -625,8 +625,8 @@ footer .copyright {
   padding-top: 30px;
 }
 .form-control {
-  height: 44px;
-  font-size: inherit;
+  height: 40px;
+  font-size: 18px;
   border-radius: 3px;
 }
 .form-control:focus {
