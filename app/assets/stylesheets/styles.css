@@ -624,3 +624,6 @@ footer .copyright {
 .v-offset-30 {
   padding-top: 30px;
 }
+.form-control {
+  border-radius: 3px;
+}
