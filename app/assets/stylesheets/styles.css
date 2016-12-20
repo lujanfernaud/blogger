@@ -307,21 +307,17 @@ a:focus {
   height: 114px;
   background: #001D40;
 }
+.col-date,
 .col-position {
   height: 114px;
   padding: 0;
   background: #001D40;
 }
-.col-date {
+/*.col-date {
   height: 114px;
   padding: 0;
-  line-height: 1.190;
-  font-size: 1.333em;
-  font-weight: 800;
-  text-align: center;
-  color: white;
   background: #001D40;
-}
+}*/
 .image-background {
   position: absolute;
   z-index: 1;
@@ -358,6 +354,8 @@ a:focus {
 }
 .col-date > .text-overlay > p {
   padding: 19px 29px;
+  /*padding: 0.593em 0.906em;*/
+  font-size: 1.333em;
 }
 .col-position > .text-overlay > p {
   padding: 10px;
