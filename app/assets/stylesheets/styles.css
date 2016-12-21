@@ -143,7 +143,9 @@ a:focus {
 @media (max-width: 767px) {
   .container-index > .row,
   .container-popular > .row,
-  .container-archive > .row {
+  .container-archive > .row,
+  .container-author > .row,
+  .container-tags > .row {
     margin-left: 0;
     margin-right: 0;
   }
