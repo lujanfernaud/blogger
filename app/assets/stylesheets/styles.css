@@ -54,6 +54,15 @@ a:hover,
 a:focus {
   color: #000;
 }
+.v-offset-10 {
+  padding-top: 10px;
+}
+.v-offset-30 {
+  padding-top: 30px;
+}
+
+/*** Header Section ***/
+
 .navbar-header {
   font-size: 1em;
 }
@@ -197,17 +206,6 @@ a:focus {
   font-weight: 300;
   font-size: 0.75em;
 }
-.previous-articles {
-  text-align: center;
-}
-.previous-articles > p {
-  display: inline-block;
-  font-size: 0.75em;
-  text-transform: uppercase;
-  padding: 5px 14px;
-  margin-top: 0;
-  margin-bottom: 0;
-}
 .post-header {
   position: relative;
   width: 100%;
@@ -279,6 +277,20 @@ a:focus {
   margin-top: 8px;
   margin-bottom: 0;
   font-size: 2.369em;
+}
+
+/*** Main Section ***/
+
+.previous-articles {
+  text-align: center;
+}
+.previous-articles > p {
+  display: inline-block;
+  font-size: 0.75em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .row-article {
   transition: all 0.03s ease;
@@ -497,6 +509,17 @@ a:focus {
 .post-meta-top {
   margin-bottom: 12px;
 }
+.form-control {
+  height: 40px;
+  font-size: 18px;
+  border-radius: 3px;
+}
+.form-control:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
 form.new_author .field,
 form.edit_author .field {
   margin-bottom: 20px;
@@ -547,6 +570,9 @@ form.edit_article .submit {
 .container-bottom-links > p {
   margin: 1.25em 0;
 }
+
+/*** Footer Section ***/
+
 .footer {
   color: #fff;
   background: #001d40;
@@ -570,21 +596,4 @@ footer .copyright {
 .fa-dark:hover,
 .fa-dark:focus {
   color: #000;
-}
-.v-offset-10 {
-  padding-top: 10px;
-}
-.v-offset-30 {
-  padding-top: 30px;
-}
-.form-control {
-  height: 40px;
-  font-size: 18px;
-  border-radius: 3px;
-}
-.form-control:focus {
-  border-color: #66afe9;
-  outline: 0;
-  -webkit-box-shadow: none;
-          box-shadow: none;
 }
