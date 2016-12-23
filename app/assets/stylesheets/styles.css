@@ -1,4 +1,4 @@
-/* Using a 1.333 (3:4 - Perfect Fourth) ratio for scaling fonts. */
+/* Typographic Scale: 1.333 (3:4 - Perfect Fourth) */
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -173,8 +173,7 @@ a:focus {
   width: 7.71em;
   margin: 0;
   background-color: rgba(0, 29, 64, 1);
-  /*padding: 11px 19px;*/
-  padding: 0.4583em 0.7916em;
+  padding: 0.4583em 0.7916em; /* 11px 19px */
 }
 @media (max-width: 479px) {
   .latest-article-container .latest-article {
@@ -194,8 +193,7 @@ a:focus {
   color: #000;
   background-color: #fff;
   text-align: center;
-  /*padding: 30px 20px 30px;*/
-  padding: 1.25em 0.8333em 1.25em;
+  padding: 1.25em 0.8333em 1.25em; /* 30px 20px 30px */
 }
 .latest-article-container .site-heading > h1 {
   font-size: 1.777em;
@@ -233,13 +231,11 @@ a:focus {
   background-color: #ffffff;
   color: black;
   text-align: center;
-  /*padding: 70px 20px;*/
-  padding: 2.916em 0.833em;
+  padding: 2.916em 0.833em; /* 70px 20px */
 }
 @media screen and (max-width: 767px) {
   .intro-header .post-heading {
-    /*padding: 40px 10px 16px;*/
-    padding: 1.666em 0.833em;
+    padding: 1.666em 0.833em; /* 40px 20px */
   }
 }
 .intro-header .post-heading h1 {
@@ -253,10 +249,8 @@ a:focus {
   }
 }
 .intro-header .post-heading .meta {
-  /*margin-top: 45px;*/
-  margin-top: 2.5em;
-  /*margin-bottom: 20px;*/
-  margin-bottom: 0.833em;
+  margin-top: 2.5em; /* 45px */
+  margin-bottom: 0.833em; /* 20px */
   font-family: 'Lora', 'Times New Roman', serif;
   font-style: italic;
   font-weight: 300;
@@ -436,8 +430,7 @@ a:focus {
   margin-bottom: 64px;
 }
 .hr-article-heading {
-  /*margin: -9px auto 78px;*/
-  margin: 0 auto 3.25em;
+  margin: 0 auto 3.25em; /* -9px auto 78px */
   bottom: 0;
   border-top: 1px solid #000;
 }
@@ -564,8 +557,7 @@ form.edit_article .submit {
   margin-top: 30px;
 }
 .container-bottom-links {
-  /*margin-top: 68px;*/
-  margin-top: 2.833em;
+  margin-top: 2.833em; /* 68px */
 }
 .container-bottom-links > p {
   margin: 1.25em 0;
