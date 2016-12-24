@@ -4,7 +4,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 24px;
   line-height: 1.618;
-  background: #fff;
+  background-color: #fff;
 }
 @media (max-width: 991px) {
   body {
@@ -67,7 +67,7 @@ a:focus {
   font-size: 1em;
 }
 .navbar-default {
-  background: #fff;
+  background-color: #fff;
 }
 .navbar-default .navbar-brand {
   color: #000;
@@ -78,7 +78,7 @@ a:focus {
 .navbar-default .navbar-brand:focus {
   height: 60px;
   color: #fff;
-  background: #001d40;
+  background-color: #001d40;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-brand:hover,
@@ -134,7 +134,7 @@ a:focus {
   height: 100%;
   min-height: 660px;
   text-align: center;
-  background: #001d40;
+  background-color: #001d40;
   margin-bottom: 9px;
 }
 @media (max-height: 767px) {
@@ -209,12 +209,12 @@ a:focus {
   width: 100%;
   height: 100%;
   text-align: center;
-  background: #001d40;
+  background-color: #001d40;
   /*margin-bottom: 9px;*/
 }
 .section-header {
   margin-bottom: 0;
-  background: #001d40;
+  background-color: #001d40;
 }
 .row-fa {
   position: absolute;
@@ -310,7 +310,7 @@ a:focus {
 }
 .col-image {
   height: 114px;
-  background: #001d40;
+  background-color: #001d40;
 }
 .col-date,
 .col-position {
@@ -318,7 +318,7 @@ a:focus {
   line-height: 108px;
   text-align: center;
   padding: 0;
-  background: #001d40;
+  background-color: #001d40;
 }
 @media (max-width: 767px) {
   .col-date,
@@ -343,7 +343,7 @@ a:focus {
   z-index: 2;
   width: 100%;
   height: 100%;
-  background: #001d40;
+  background-color: #001d40;
   opacity: 0.80;
 }
 .text-overlay {
@@ -567,7 +567,7 @@ form.edit_article .submit {
 
 .footer {
   color: #fff;
-  background: #001d40;
+  background-color: #001d40;
   padding: 70px 0;
 }
 footer ul > li > a {
