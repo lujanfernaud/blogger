@@ -1,4 +1,13 @@
-/* Typographic Scale: 1.333 (3:4 - Perfect Fourth) */
+/**
+ * Project: Jumpstart Lab's Blogger Project
+ * Author: Lujan Fernaud
+ * Typographic Scale: 1.333 (3:4 - Perfect Fourth)
+ */
+
+
+/* Body & Initial Settings
+  ====================================================== */
+
 
 body {
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -61,7 +70,10 @@ a:focus {
   padding-top: 30px;
 }
 
-/*** Header Section ***/
+
+/* Header
+  ====================================================== */
+
 
 .navbar-header {
   font-size: 1em;
@@ -273,7 +285,10 @@ a:focus {
   font-size: 2.369em;
 }
 
-/*** Main Section ***/
+
+/* Main
+  ====================================================== */
+
 
 .previous-articles {
   text-align: center;
@@ -563,7 +578,10 @@ form.edit_article .submit {
   margin: 1.25em 0;
 }
 
-/*** Footer Section ***/
+
+/* Footer
+  ====================================================== */
+
 
 .footer {
   padding: 70px 0;
