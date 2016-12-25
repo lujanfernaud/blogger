@@ -345,12 +345,14 @@ a:focus {
 .previous-articles {
   text-align: center;
 }
-.previous-articles > p {
+.h1-previous-articles {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
   padding: 5px 14px;
   font-size: 0.75em;
+  line-height: 1.618;
+  font-weight: 400;
   text-transform: uppercase;
 }
 .h1-archive {
