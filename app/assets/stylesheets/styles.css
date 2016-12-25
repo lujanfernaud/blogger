@@ -5,7 +5,7 @@
  */
 
 
-/* Body & Initial Settings
+/* Body, Initial Settings, & Helper Classes
   ====================================================== */
 
 
@@ -56,24 +56,31 @@ h2,
 .h2 {
   font-size: 1.333em;
 }
-a {
-  color: #000;
-}
+a,
 a:hover,
 a:focus {
   color: #000;
 }
+
+/* Helper classes */
+
 .v-offset-10 {
   padding-top: 10px;
 }
 .v-offset-30 {
   padding-top: 30px;
 }
+.full-height {
+  min-height: inherit;
+  height: inherit;
+}
 
 
 /* Header
   ====================================================== */
 
+
+/* Navbar */
 
 .navbar-header {
   font-size: 1em;
@@ -131,15 +138,17 @@ a:focus {
   top: 0;
   border-width: 0;
 }
-.full-height {
-  min-height: inherit;
-  height: inherit;
-}
+
+/* Header generic settings */
+
 .intro-header {
   margin-top: 0;
   margin-bottom: 0;
   padding-top: 60px;
 }
+
+/* Header in home, showing the latest article featured */
+
 .featured-header {
   position: relative;
   width: 100%;
@@ -216,16 +225,16 @@ a:focus {
   font-weight: 300;
   font-size: 0.75em;
 }
+
+/* Header in article, showing a cover image of the article */
+/* (We use cover_image.js to help with the sizing and positioning.) */
+
 .post-header {
   position: relative;
   width: 100%;
   height: 100%;
   /*margin-bottom: 9px;*/
   text-align: center;
-  background-color: #001d40;
-}
-.section-header {
-  margin-bottom: 0;
   background-color: #001d40;
 }
 .row-fa {
@@ -276,6 +285,13 @@ a:focus {
 .intro-header .post-heading .meta a {
   color: #000;
 }
+
+/* Header in every other section, showing only a background color and the sections's name */
+
+.section-header {
+  margin-bottom: 0;
+  background-color: #001d40;
+}
 .intro-header .page-heading {
   padding: 70px 0 88px;
 }
@@ -290,6 +306,42 @@ a:focus {
   ====================================================== */
 
 
+/* Section containers */
+
+.section-container,
+.archive-container,
+.comments-container,
+.article-container {
+  background-color: inherit;
+}
+.section-container {
+  padding-top: 61px;
+  padding-bottom: 61px;
+}
+.popular-container {
+  padding-top: 126px;
+}
+.archive-container {
+  padding-top: 61px;
+  padding-bottom: 61px;
+}
+.comments-container {
+  padding-top: 30px;
+  padding-bottom: 61px;
+}
+.article-container {
+  padding-bottom: 30px;
+}
+.article-container img {
+  display: block;
+  max-width: 100% !important;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Section headings */
+
 .previous-articles {
   text-align: center;
 }
@@ -301,6 +353,23 @@ a:focus {
   font-size: 0.75em;
   text-transform: uppercase;
 }
+.h1-archive {
+  margin-top: 90px;
+  margin-bottom: 90px;
+  font-size: 2.369em;
+  font-weight: 800;
+  text-align: center;
+}
+.h1-archive:first-child {
+  margin-top: 50px;
+}
+.h2-archive {
+  font-size: 1.333em;
+  font-weight: 800;
+}
+
+/* Individual articles previews */
+
 .row-article {
   transition: all 0.03s ease;
 }
@@ -322,6 +391,24 @@ a:focus {
     margin-top: 24px;
     margin-bottom: 10px;
   }
+}
+.post-preview > .post-title > a {
+  margin-top: 21px;
+  color: #000;
+}
+.post-preview > .post-meta {
+    margin-top: 0;
+    margin-bottom: 16px;
+    font-size: 0.75em;
+    font-style: italic;
+    color: #000;
+}
+.post-preview > .post-meta > a {
+    color: #000;
+    text-decoration: none;
+}
+.post-meta-top {
+  margin-bottom: 12px;
 }
 .col-image {
   height: 114px;
@@ -423,6 +510,9 @@ a:focus {
 .border-bottom {
   border-bottom: 1px solid #ddd;
 }
+
+/* Horizontal rules */
+
 .hr-index {
   margin-top: 25px;
   margin-bottom: 25px;
@@ -454,69 +544,9 @@ a:focus {
     margin: 0 auto 2em;
   }
 }
-.section-container,
-.archive-container,
-.comments-container,
-.article-container {
-  background-color: inherit;
-}
-.section-container {
-  padding-top: 61px;
-  padding-bottom: 61px;
-}
-.popular-container {
-  padding-top: 126px;
-}
-.archive-container {
-  padding-top: 61px;
-  padding-bottom: 61px;
-}
-.comments-container {
-  padding-top: 30px;
-  padding-bottom: 61px;
-}
-.article-container {
-  padding-bottom: 30px;
-}
-.article-container img {
-  display: block;
-  max-width: 100% !important;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-}
-.h1-archive {
-  margin-top: 90px;
-  margin-bottom: 90px;
-  font-size: 2.369em;
-  font-weight: 800;
-  text-align: center;
-}
-.h1-archive:first-child {
-  margin-top: 50px;
-}
-.h2-archive {
-  font-size: 1.333em;
-  font-weight: 800;
-}
-.post-preview > .post-title > a {
-  margin-top: 21px;
-  color: #000;
-}
-.post-preview > .post-meta {
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-size: 0.75em;
-    font-style: italic;
-    color: #000;
-}
-.post-preview > .post-meta > a {
-    color: #000;
-    text-decoration: none;
-}
-.post-meta-top {
-  margin-bottom: 12px;
-}
+
+/* Forms */
+
 .form-control {
   height: 40px;
   font-size: 18px;
@@ -548,6 +578,9 @@ form.edit_article .submit {
   margin-top: 20px;
   margin-bottom: 40px;
 }
+
+/* Article comments */
+
 .section-comments {
   border-top: 1px solid #eee;
 }
