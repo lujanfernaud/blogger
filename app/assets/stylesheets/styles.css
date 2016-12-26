@@ -147,7 +147,63 @@ a:focus {
   padding-top: 60px;
 }
 
-/* Header in home, showing the latest article featured */
+/* Header in home, showing the latest article featured (XS SCREENS ONLY) */
+
+.featured-header-xs {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 200px;
+  margin-bottom: 9px;
+  text-align: center;
+  background-color: #001d40;
+}
+.latest-article-container-xs {
+  position: relative;
+  top: -52px;
+  min-width: 100%;
+  width: 100%;
+}
+.latest-article-container-xs .latest-article-xs {
+  position: relative;
+  width: 8em;
+  margin: 0;
+  padding-top: 0.4583em;
+  padding-bottom: 0.4583em;
+  padding-left: 0.7916em;
+  padding-right: 0;
+  background-color: #fff;
+}
+.latest-article-container-xs .latest-article-xs > p {
+  margin: 0;
+  padding-right: 1em;
+  font-size: 0.75em;
+  color: #000;
+  text-transform: uppercase;
+}
+.latest-article-container-xs .site-heading {
+  position: relative;
+  min-width: 100%;
+  width: 100%;
+  padding: 1.25em 0.8333em 1.25em; /* 30px 20px 30px */
+  color: #fff;
+  text-align: center;
+  background-color: #001d40;
+}
+.latest-article-container-xs .site-heading > h1 {
+  font-size: 1.777em;
+}
+.latest-article-container-xs .site-heading .meta {
+  font-family: 'Lora', 'Times New Roman', serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 0.75em;
+}
+.latest-article-container-xs a {
+  color: #fff;
+}
+
+/* Header in home, showing the latest article featured (SM AND UP) */
 
 .featured-header {
   position: relative;
@@ -166,16 +222,6 @@ a:focus {
 @media (max-height: 360px) {
   .featured-header {
     min-height: 260px;
-  }
-}
-@media (max-width: 767px) {
-  .container-index > .row,
-  .container-popular > .row,
-  .container-archive > .row,
-  .container-author > .row,
-  .container-tags > .row {
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 .latest-article-container {
@@ -308,6 +354,16 @@ a:focus {
 
 /* Section containers */
 
+@media (max-width: 767px) {
+  .container-index > .row,
+  .container-popular > .row,
+  .container-archive > .row,
+  .container-author > .row,
+  .container-tags > .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
 .section-container,
 .archive-container,
 .comments-container,
