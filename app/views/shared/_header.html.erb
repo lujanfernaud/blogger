@@ -1,12 +1,23 @@
 <% if current_page?(root_path) %>
 	<!-- Visible only in XS to resize header image -->
 	<header class="visible-xs intro-header">
-		<div class="featured-header-xs" <%= show_image_if_exists(@latest_article, :small) %>></div>
+		<div class="featured-header-xs" <%= show_image_if_exists(@latest_article, :small) %>>
+			<div class="container">
+				<div class="row">
+
+					<div class="latest-article-tab" aria-hidden="true">
+						<p>Latest article</p>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
 		<div class="container-fluid container-index-xs">
 			<div class="row">
 
 				<div class="latest-article-container-xs">
-					<div class="latest-article-xs">
+					<div class="sr-only">
 						<p>Latest article</p>
 					</div>
 					<div class="site-heading">
