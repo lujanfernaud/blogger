@@ -167,6 +167,16 @@ a:focus {
   padding-right: 0;
   background-color: #fff;
 }
+/*.h1-latest-article {
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 1em;
+  font-size: 0.75em;
+  line-height: 1.618;
+  font-weight: 400;
+  text-transform: uppercase;
+}*/
 .latest-article-tab > p {
   margin: 0;
   padding-right: 1em;
