@@ -202,6 +202,11 @@ a:focus {
   font-weight: 300;
   font-size: 0.75em;
 }
+@media (max-width: 480px) {
+  .latest-article-container-xs .site-heading .meta {
+    font-size: 0.90em;
+  }
+}
 .latest-article-container-xs a {
   color: #fff;
 }
@@ -274,6 +279,11 @@ a:focus {
   font-weight: 300;
   font-size: 0.75em;
 }
+@media (max-width: 480px) {
+  .latest-article-container .site-heading .meta {
+    font-size: 0.90em;
+  }
+}
 
 /* Header in article, showing a cover image of the article */
 /* (We use cover_image.js to help with the sizing and positioning.) */
@@ -329,6 +339,7 @@ a:focus {
 @media (max-width: 767px) {
   .intro-header .post-heading .meta {
     margin-top: 1.777em;
+    font-size: 0.90em;
   }
 }
 .intro-header .post-heading .meta a {
@@ -349,7 +360,6 @@ a:focus {
   margin-bottom: 0;
   font-size: 2.369em;
 }
-
 
 /* Main
   ====================================================== */
@@ -463,6 +473,11 @@ a:focus {
     font-size: 0.75em;
     font-style: italic;
     color: #000;
+}
+@media (max-width: 480px) {
+  .post-preview > .post-meta {
+    font-size: 0.90em;
+  }
 }
 .post-preview > .post-meta > a {
     color: #000;
