@@ -75,7 +75,8 @@
 	</header>
 
 <% elsif controller.controller_name == 'articles' && controller.action_name == 'show' %>
-	<header class="intro-header post-header" <%= show_image_if_exists(@article, :large) %>>
+	<!-- Hidden in XS -->
+	<header class="hidden-xs intro-header post-header" <%= show_image_if_exists(@article, :large) %>>
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-1 col-xs-12">
@@ -91,6 +92,21 @@
 				</div>
    	  </div>
   	</div>
+	</header>
+	<!-- Visible only in XS -->
+	<header class="visible-xs intro-header">
+		<div class="post-header-xs" <%= show_image_if_exists(@article, :small) %>></div>
+
+		<div class="post-header">
+			<div class="container-fluid container-index-xs">
+				<div class="row">
+					<div class="post-heading post-heading-xs">
+						<h1><%= link_to @article.title, article_path(@article) %></h1>
+						<span class="meta">by <%= link_to @article.author.username, author_path(@article.author) %> on <%= @article.created_at.strftime('%b %d, %Y') %></span>
+					</div>
+		 	  </div>
+			</div>
+		</div>
 	</header>
 
 <% else %>
