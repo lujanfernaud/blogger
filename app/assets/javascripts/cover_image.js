@@ -41,9 +41,27 @@ function adjustHeader() {
   // If the screen is smaller than 767px:
   } else {
 
-    $(".post-header").css("height", "");
-    $(".post-heading").css("top", "");
-    $(".row-fa").css("top", "");
+    if (window.innerWidth > window.innerHeight) {
+
+      var navbarHeight = parseInt($(".navbar").css("min-height"));
+      $(".post-header-xs").css("height", window.innerHeight - navbarHeight);
+
+    } else {
+
+      var headerHeight;
+      // Set headerHeight always to the size of the shortest side.
+      // We do this to keep the header always the same height in landscape
+      // and portrait orientation.
+      if (window.innerWidth > window.innerHeight) {
+        headerHeight = window.innerHeight;
+      } else {
+        headerHeight = window.innerWidth;
+      };
+
+      var navbarHeight = parseInt($(".navbar").css("min-height"));
+      $(".post-header-xs").css("height", headerHeight - navbarHeight);
+
+    };
 
   };
 };
