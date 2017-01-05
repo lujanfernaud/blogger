@@ -420,13 +420,13 @@ a:focus {
 /* Section headings */
 
 .previous-articles {
+  margin-top: 5px;
   text-align: center;
 }
 .h1-previous-articles {
   display: inline-block;
   margin-top: 0;
   margin-bottom: 0;
-  padding: 5px 14px;
   font-size: 0.75em;
   line-height: 1.618;
   font-weight: 400;
@@ -618,6 +618,12 @@ a:focus {
 .hr-previous-articles {
   margin-top: 0.833em;
   margin-bottom: 2.666em; /* 64px */
+}
+@media (max-width: 767px) {
+  .hr-previous-articles {
+    visibility: hidden;
+    margin-top: 0;
+  }
 }
 .hr-article-heading {
   bottom: 0;
