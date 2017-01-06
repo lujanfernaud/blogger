@@ -309,9 +309,19 @@ a:focus {
   left: 0;
   right: 0;
 }
-@media (max-height: 520px) {
+@media (max-height: 520px) and (min-width: 767px) {
   .row-fa {
     visibility: hidden;
+  }
+}
+@media (max-width: 767px) and (orientation: portrait) {
+  .row-fa {
+    visibility: hidden;
+  }
+}
+@media (max-width: 767px) and (orientation: landscape) {
+  .row-fa {
+    bottom: 2em;
   }
 }
 .intro-header .post-heading {
