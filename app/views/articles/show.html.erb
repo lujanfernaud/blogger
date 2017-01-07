@@ -45,7 +45,6 @@
   							<h3 class="h2 h2-comments"><%= pluralize(@article.comments.size, 'Comment') %></h3>
   							<%= render partial: 'articles/comment', collection: @article.comments %>
   						</div>
-              <hr class="hr-comments-divider">
   					<% end %>
   					<%= render partial: 'comments/form' %>
 

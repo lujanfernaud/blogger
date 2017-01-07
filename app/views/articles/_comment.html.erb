@@ -1,5 +1,8 @@
 <div class="comment">
-	<p class="comment-author"><%= comment.author_name %> on <%= comment.created_at.strftime('%b %d, %Y') %></p>
+	<h2 class="h3 comment-author">
+    <%= comment.author_name %>
+    <span class="comment-created-at"> on <time datetime="<%= comment.created_at %>"><%= comment.created_at.strftime('%b %d, %Y') %></time></span>
+  </h2>
   <p class="comment-text"><%= comment.body %></p>
 </div>
-<hr>
+<!-- <hr> -->

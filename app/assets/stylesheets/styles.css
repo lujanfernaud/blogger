@@ -51,6 +51,10 @@ h2,
 .h2 {
   font-size: 1.333em;
 }
+h3,
+.h3 {
+  font-size: 1em;
+}
 a,
 a:hover,
 a:focus {
@@ -413,7 +417,6 @@ a:focus {
   padding-bottom: 2.541em; /* 61px */
 }
 .comments-container {
-  padding-top: 1.25em; /* 30px */
   padding-bottom: 2.541em; /* 61px */
 }
 .article-container {
@@ -684,27 +687,47 @@ form.edit_article .submit {
 
 .section-comments {
   border-top: 1px solid #eee;
+  background: #eee;
 }
 .h2-comments {
-  padding-bottom: 5px;
+  padding-top: 1em;
+  padding-bottom: 1em;
   font-weight: 800;
 }
 .comments {
   padding-top: 0;
 }
-.comment > p {
+.comment {
+  margin-bottom: 2.2em;
+  margin-left: 0.5em;
+  padding-left: 0.7em;
+  border-left: 2px solid #8A8A8A;
+}
+.comment-author {
+  font-weight: 600;
+  line-height: 1;
+}
+.comment-created-at {
+  font-size: 0.75em;
+  font-weight: 400;
+}
+.comment-text {
+  position: relative;
+  bottom: -0.2em;
+  margin-top: 0.5em;
   line-height: 1.4;
 }
-.comments-container hr:nth-last-child(1) {
-  border-top: 0;
+.comments + .post-a-comment > .h2-comments {
+  padding-top: 0.5em;
 }
-.hr-comments-divider {
-  margin-top: 60px;
-  margin-bottom: 55px;
+.post-a-comment > .h2-comments {
+  padding-top: 1.4em;
+  padding-bottom: 0.6em;
+  font-weight: 800;
 }
-.post-a-comment {
-  margin-top: 30px;
-}
+
+/* Bottom links */
+
 .container-bottom-links {
   margin-top: 2.833em; /* 68px */
 }
