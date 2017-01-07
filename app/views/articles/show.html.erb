@@ -20,8 +20,10 @@
   					</p>
 
   					<% if logged_in? and is_owner? %>
-  						<%= link_to "Edit", edit_article_path(@article) %> | 
-  						<%= link_to "Delete", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
+              <p>
+                <%= link_to "Edit article", edit_article_path(@article) %> | 
+                <%= link_to "Delete article", article_path(@article), method: :delete, data: {confirm: "Really delete the article?"} %>
+              </p>
   					<% end %>
 
     			</div>
