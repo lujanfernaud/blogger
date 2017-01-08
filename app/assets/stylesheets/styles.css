@@ -138,9 +138,9 @@ a:focus {
   border-width: 0;
 }
 
-/* Navbar for the article, meant to be shown only in desktop screens */
+/* Navbar for articles, meant to be shown mainly in laptops and desktops */
 
-@media (min-width: 767px) {
+@media (min-width: 1200px) {
   .navbar-article {
     background-color: transparent;
   }
