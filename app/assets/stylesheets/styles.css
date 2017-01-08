@@ -93,6 +93,11 @@ a:focus {
   font-size: 1em;
   color: #000;
 }
+@media (max-width: 767px) {
+  .navbar-default .navbar-brand {
+    height: 50px;
+  }
+}
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus {
   height: 60px;
