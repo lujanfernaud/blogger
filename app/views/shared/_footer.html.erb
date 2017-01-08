@@ -1,38 +1,48 @@
 <footer class="footer">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
 
-        <ul class="list-inline text-center">
-          <li>
-            <a href="https://github.com/lujanfernaud">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-stack-2x"></i>
-                <i class="fa fa-github-square fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="mailto:hello@lujanfernaud.com">
-              <span class="fa-stack fa-lg">
-                <i class="fa fa-stack-2x"></i>
-                <i class="fa fa-envelope-square fa-stack-1x fa-inverse"></i>
-              </span>
-            </a>
-          </li>
-          <li>
-            <a href="<%= articles_url(format: "rss") %>">
+        <div class="col-sm-6 col-xs-12">
+          <h2 class="brand">
+            <a href="/">Blogo</a>
+          </h2>
+        </div><!-- /.col-sm-6 ... -->
+
+        <div class="col-sm-6 col-xs-12">
+          <ul class="list-unstyled links">
+            <li>
               <span class="fa-stack fa-lg">
                 <i class="fa fa-stack-2x"></i>
                 <i class="fa fa-rss-square fa-stack-1x fa-inverse"></i>
               </span>
-            </a>
-          </li>
-        </ul>
+              <a href="<%= articles_url(format: "rss") %>">RSS Feed</a>
+            </li>
+            <li>
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-stack-2x"></i>
+                <i class="fa fa-github-square fa-stack-1x fa-inverse"></i>
+              </span>
+              <a href="https://github.com/lujanfernaud">GitHub</a>
+            </li>
+            <li>
+              <span class="fa-stack fa-lg">
+                <i class="fa fa-stack-2x"></i>
+                <i class="fa fa-envelope-square fa-stack-1x fa-inverse"></i>
+              </span>
+              <a href="mailto:hello@lujanfernaud.com">Email</a>
+            </li>
+          </ul>
+        </div><!-- /.col-sm-6 ... -->
 
-        <p class="copyright">Copyleft &copy; Blogger 2016</p>
+      </div><!-- /.col-lg-8 ... -->
+    </div><!-- /.row -->
 
+    <div class="row">
+      <div class="col-xs-12">
+        <p class="copyright">Copyright &copy; Our Authors</p>
       </div>
-    </div>
-  </div>
+    </div><!-- /.row -->
+
+  </div><!-- /.container -->
 </footer>

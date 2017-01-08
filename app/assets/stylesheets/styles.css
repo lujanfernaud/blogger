@@ -768,21 +768,75 @@ form.edit_article .submit {
 
 
 .footer {
-  padding: 70px 0;
+  padding-top: 5em;
+  padding-bottom: 5em;
   color: #fff;
   background-color: #001d40;
 }
-footer ul > li > a {
+@media (max-width: 767px) {
+  .footer {
+    padding-top: 3em;
+    padding-bottom: 4em;
+  }
+}
+.footer .brand {
+  padding-top: 1em;
+  padding-right: 2.5em;
+  padding-bottom: 1em;
+  margin: 0;
+  border-right: 2px solid #fff;
+  text-align: right;
+}
+@media (max-width: 767px) {
+  .footer .brand {
+    padding-top: 0.5em;
+    padding-right: 0;
+    padding-bottom: 2em;
+    margin: 0;
+    border: none;
+    text-align: center;
+  }
+}
+.footer .brand a {
+  font-size: 1.777em;
   color: #fafafa;
 }
-footer ul > li > a:hover,
-footer ul > li > a:focus {
+.footer .links {
+  position: relative;
+  top: -0.28em;
+  margin: 0;
+  padding-left: 1.73em;
+}
+@media (max-width: 767px) {
+  .footer .links {
+    position: relative;
+    top: 0;
+    margin: 0;
+    padding-left: 0;
+    text-align: center;
+  }
+}
+.footer .links a {
+  font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.65em;
+  color: #fafafa;
+}
+.footer .links a:hover,
+.footer .links a:focus {
   color: #fff;
 }
-footer .copyright {
-  margin-bottom: 0;
-  font-size: 0.563em;
-  text-align: center;
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  line-height: 1.5em;
+  vertical-align: middle;
+}
+@media (max-width: 767px) {
+  .fa-stack {
+    display: none;
+  }
 }
 .fa-dark {
   color: #4f4f4f;
@@ -790,4 +844,10 @@ footer .copyright {
 .fa-dark:hover,
 .fa-dark:focus {
   color: #000;
+}
+.footer .copyright {
+  margin-top: 4.5em;
+  margin-bottom: 0;
+  font-size: 0.65em;
+  text-align: center;
 }
