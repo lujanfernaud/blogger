@@ -88,6 +88,7 @@ a:focus {
   background-color: #fff;
 }
 .navbar-default .navbar-brand {
+  height: 60px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1em;
   color: #000;
@@ -150,6 +151,9 @@ a:focus {
   }
   .navbar-article .navbar-brand {
     color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .navbar-article:hover .navbar-brand {
     color: #000;
@@ -159,10 +163,18 @@ a:focus {
   }
   .navbar-article .navbar-nav > li > a {
     color: #fff;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   .navbar-article:hover .navbar-nav > li > a {
     color: #000;
   }
+}
+.navbar-custom {
+  -webkit-transition: background-color 0.3s ease-in-out;
+  -moz-transition: background-color 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
 }
 
 /* Header generic settings */
