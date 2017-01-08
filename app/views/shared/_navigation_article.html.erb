@@ -1,0 +1,67 @@
+<nav class="navbar navbar-default navbar-article navbar-custom navbar-fixed-top">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header page-scroll">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" <%= link_to "Blogger", root_path %></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <%= link_to "Most Popular", popular_path %>
+        </li>
+        <li>
+          <%= link_to "Archive", archive_index_path %>
+        </li>
+      </ul>
+
+      <ul class="nav navbar-nav navbar-right">
+        <% if logged_in? %>
+          <li>
+            <%= link_to "New Article", new_article_path, class: "new_article" %>
+          </li>
+          <li>
+            <%= link_to "Logout (#{current_user.username})", logout_path %>
+          </li>
+        <% else %>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+            <div class="dropdown-menu" style="padding:17px;">
+              <%= form_tag author_sessions_path, method: :post do %>
+              <li>
+                <div class="form-group">
+                  <%= label_tag :email %>
+                  <%= text_field_tag :email %>
+                </div>
+              </li>
+
+              <li>
+                <div class="form-group">
+                  <%= label_tag :password %>
+                  <%= password_field_tag :password %>
+                </div>
+              </li>
+
+              <li>
+                <div class="form-group">
+                  <%= submit_tag 'Login' %>
+                </div>
+              </li>
+              <% end %>
+            </div>
+          </li>
+        <% end %>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+
+  </div>
+  <!-- /.container -->
+</nav>

@@ -138,6 +138,33 @@ a:focus {
   border-width: 0;
 }
 
+/* Navbar for the article, meant to be shown only in desktop screens */
+
+@media (min-width: 767px) {
+  .navbar-article {
+    background-color: transparent;
+  }
+  .navbar-article:hover,
+  .navbar-article:focus {
+    background-color: #fff;
+  }
+  .navbar-article .navbar-brand {
+    color: #fff;
+  }
+  .navbar-article:hover .navbar-brand {
+    color: #000;
+  }
+  .navbar-article:hover .navbar-brand:hover {
+    color: #fff;
+  }
+  .navbar-article .navbar-nav > li > a {
+    color: #fff;
+  }
+  .navbar-article:hover .navbar-nav > li > a {
+    color: #000;
+  }
+}
+
 /* Header generic settings */
 
 .intro-header {
