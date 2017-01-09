@@ -37,6 +37,7 @@ body {
 }
 p {
   line-height: 1.618;
+  color: #303030;
 }
 h1,
 h2,
@@ -58,7 +59,7 @@ h3,
 a,
 a:hover,
 a:focus {
-  color: #000;
+  color: #303030;
 }
 
 /* Helper classes */
@@ -91,7 +92,7 @@ a:focus {
   height: 60px;
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 1em;
-  color: #000;
+  color: #303030;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-brand {
@@ -112,7 +113,7 @@ a:focus {
 }
 .navbar-default .navbar-nav > li > a {
   font-size: 0.563em;
-  color: #000;
+  color: #303030;
 }
 @media (max-width: 767px) {
   .navbar-default .navbar-nav > li > a {
@@ -122,13 +123,13 @@ a:focus {
 }
 .navbar-default .navbar-nav > li > a:hover,
 .navbar-default .navbar-nav > li > a:focus {
-  color: #000;
+  color: #303030;
   background-color: #e7e7e7;
 }
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  color: #000;
+  color: #303030;
   background-color: #e7e7e7;
 }
 .navbar-custom .navbar-brand {
@@ -161,7 +162,7 @@ a:focus {
     transition: all 0.3s ease-in-out;
   }
   .navbar-article:hover .navbar-brand {
-    color: #000;
+    color: #303030;
   }
   .navbar-article:hover .navbar-brand:hover {
     color: #fff;
@@ -173,7 +174,7 @@ a:focus {
     transition: all 0.3s ease-in-out;
   }
   .navbar-article:hover .navbar-nav > li > a {
-    color: #000;
+    color: #303030;
   }
 }
 .navbar-custom {
@@ -224,7 +225,7 @@ a:focus {
   margin: 0;
   padding-right: 1em;
   font-size: 0.75em;
-  color: #000;
+  color: #303030;
   text-transform: uppercase;
 }
 .latest-article-container-xs {
@@ -314,7 +315,7 @@ a:focus {
   min-width: 100%;
   width: 100%;
   padding: 1.25em 0.8333em 1.25em; /* 30px 20px 30px */
-  color: #000;
+  color: #303030;
   text-align: center;
   background-color: #fff;
 }
@@ -409,7 +410,7 @@ a:focus {
   }
 }
 .intro-header .post-heading .meta a {
-  color: #000;
+  color: #303030;
 }
 
 /* Header in every other section, showing only a background color and the sections's name */
@@ -512,11 +513,11 @@ a:focus {
 .row-article:hover .col-article a,
 .row-article:hover .col-article p,
 .row-article:focus .col-article a {
-  color: #000;
+  color: #303030;
 }
 .row-article a:hover,
 .row-article a:focus {
-  color: #000 !important;
+  color: #303030 !important;
 }
 .post-preview > .post-title {
   margin-top: 20px;
@@ -530,14 +531,14 @@ a:focus {
 }
 .post-preview > .post-title > a {
   margin-top: 21px;
-  color: #000;
+  color: #303030;
 }
 .post-preview > .post-meta {
     margin-top: 0;
     margin-bottom: 16px;
     font-size: 0.75em;
     font-style: italic;
-    color: #000;
+    color: #303030;
 }
 @media (max-width: 480px) {
   .post-preview > .post-meta {
@@ -545,7 +546,7 @@ a:focus {
   }
 }
 .post-preview > .post-meta > a {
-    color: #000;
+    color: #303030;
     text-decoration: none;
 }
 .post-meta-top {
@@ -670,7 +671,7 @@ a:focus {
   }
 }
 .hr-small {
-  width: 7%;
+  width: 6%;
 }
 .hr-previous-articles {
   margin-top: 0.833em;
@@ -685,7 +686,7 @@ a:focus {
 .hr-article-heading {
   bottom: 0;
   margin: 0 auto 3.25em; /* 78px */
-  border-top: 1px solid #000;
+  border-top: 1px solid #303030;
 }
 @media (max-width: 767px) {
   .hr-article-heading {
@@ -860,11 +861,12 @@ form.edit_article .submit {
 }
 .fa-dark:hover,
 .fa-dark:focus {
-  color: #000;
+  color: #303030;
 }
 .footer .copyright {
   margin-top: 4.5em;
   margin-bottom: 0;
   font-size: 0.65em;
   text-align: center;
+  color: #fff;
 }
