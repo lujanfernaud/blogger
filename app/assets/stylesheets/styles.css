@@ -1,6 +1,7 @@
 /**
  * Project: Jumpstart Lab's Blogger Project
  * Author: Lujan Fernaud
+ * Brand color: #001d40
  * Typographic Scale: 1.333 (3:4 - Perfect Fourth)
  */
 
@@ -74,7 +75,15 @@ a:focus {
   min-height: inherit;
   height: inherit;
 }
-
+.dropcap {
+  float: left;
+  padding-right: 9px;
+  /*font: 700 5.7em/0.85em Georgia,"Times New Roman",Times,serif;*/
+  font-size: 5.7em;
+  line-height: 0.85em;
+  font-weight: 700;
+  color: #001d40;
+}
 
 /* Header
   ====================================================== */
