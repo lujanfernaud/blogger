@@ -389,7 +389,7 @@ a:focus {
 }
 .intro-header .post-heading {
   position: relative;
-  padding: 2.916em 0.833em; /* 70px 20px */
+  padding: 2.916em 4em;
   color: black;
   text-align: center;
   background-color: #fff;
