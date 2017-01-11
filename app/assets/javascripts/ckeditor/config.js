@@ -1,6 +1,6 @@
 // The set of styles for the <b>Styles</b> drop-down list.
 CKEDITOR.stylesSet.add( 'my_styles', [
-  { name: 'Dropcap', element: 'span', attributes: { 'class': 'dropcap' } },
+  { name: 'Drop Cap', element: 'span', attributes: { 'class': 'dropcap' } },
   { name: 'Code', element: 'code' },
   { name: 'Cited Work', element: 'cite' },
   { name: 'Inline Quote', element: 'q' }
