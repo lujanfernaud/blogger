@@ -1,7 +1,16 @@
+// The set of styles for the <b>Styles</b> drop-down list.
+CKEDITOR.stylesSet.add( 'my_styles', [
+  { name: 'Dropcap', element: 'span', attributes: { 'class': 'dropcap' } },
+  { name: 'Code', element: 'code' },
+  { name: 'Cited Work', element: 'cite' },
+  { name: 'Inline Quote', element: 'q' }
+]);
+
 CKEDITOR.editorConfig = function(config) {
-  config.language = 'en';
-  config.uiColor = 'F2F2F2';
-  config.height = 300;
+  config.language  = 'en';
+  config.uiColor   = 'F2F2F2';
+  config.height    = 300;
+  config.stylesSet = 'my_styles';
 
   config.filebrowserBrowseUrl = "/ckeditor/attachment_files";
   config.filebrowserImageBrowseLinkUrl = "/ckeditor/pictures";
