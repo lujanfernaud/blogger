@@ -703,13 +703,23 @@ a:focus {
     margin-top: 0;
   }
 }
-.hr-article-heading {
+/*.hr-article-heading {
   bottom: 0;
-  margin: 0 auto 3.25em; /* 78px */
+  margin: 0 auto 3.25em;
   border-top: 1px solid #303030;
 }
 @media (max-width: 767px) {
   .hr-article-heading {
+    margin: 0 auto 2em;
+  }
+}*/
+.article-container .hr-decorative {
+  width: 45%;
+  height: 0.5em;
+  margin: 0 auto 3.25em;
+}
+@media (max-width: 767px) {
+  .article-container .hr-decorative {
     margin: 0 auto 2em;
   }
 }
