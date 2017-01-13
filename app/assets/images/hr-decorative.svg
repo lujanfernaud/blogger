@@ -8,6 +8,8 @@
    version="1.1"
    width="400"
    height="8"
+   preserveAspectRatio="none"
+   viewBox="0 0 400 8"
    id="svg2">
   <defs
      id="defs4" />
