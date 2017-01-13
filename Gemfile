@@ -40,6 +40,8 @@ gem 'rake', '~> 11.3.0'
 gem 'frontend-generators'
 # Use Font Awesome Rails
 gem 'font-awesome-rails'
+# Embed SVG files
+gem 'inline_svg'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
