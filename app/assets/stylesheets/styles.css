@@ -714,9 +714,12 @@ a:focus {
   }
 }*/
 .article-container .hr-decorative {
+  display: block;
   width: 45%;
+  max-width: 100% !important;
   height: 0.5em;
   margin: 0 auto 3.25em;
+  vertical-align: middle;
 }
 @media (max-width: 767px) {
   .article-container .hr-decorative {
