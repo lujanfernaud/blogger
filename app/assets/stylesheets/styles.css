@@ -778,22 +778,29 @@ form.edit_article .submit {
 }
 .comment {
   margin-bottom: 2.2em;
-  margin-left: 0.5em;
-  padding-left: 0.8em;
-  border-left: 2px solid #8A8A8A;
+  padding-top: 0.6em;
+  padding-bottom: 0.5em;
+  padding-left: 0.7em;
+  padding-right: 0.7em;
+  background: #fff;
+  border-radius: 3px;
 }
 .comment-author {
+  margin-top: 0;
+  margin-bottom: 0.2em;
+  margin-bottom: 0;
   font-weight: 600;
   line-height: 1;
 }
 .comment-created-at {
   font-size: 0.75em;
   font-weight: 400;
+  font-style: italic;
 }
 .comment-text {
   position: relative;
-  bottom: -0.2em;
   margin-top: 0.5em;
+  margin-bottom: 0;
   line-height: 1.4;
 }
 .comments + .post-a-comment > .h2-comments {
