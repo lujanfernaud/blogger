@@ -66,7 +66,8 @@ a:focus {
 /* Helper classes */
 
 .v-offset-10 {
-  padding-top: 10px;
+  /*padding-top: 10px;*/
+  padding-top: 0.416em;
 }
 .v-offset-30 {
   padding-top: 30px;
@@ -769,8 +770,8 @@ form.edit_article .submit {
   background: #eee;
 }
 .h2-comments {
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 1.2em;
+  padding-bottom: 1.5em;
   font-weight: 800;
 }
 .comments {
@@ -803,11 +804,11 @@ form.edit_article .submit {
   line-height: 1.4;
 }
 .comments + .post-a-comment > .h2-comments {
-  padding-top: 0.5em;
+  padding-top: 0.4em;
 }
 .post-a-comment > .h2-comments {
-  padding-top: 1.4em;
-  padding-bottom: 0.6em;
+  padding-top: 1.2em;
+  padding-bottom: 1em;
   font-weight: 800;
 }
 
