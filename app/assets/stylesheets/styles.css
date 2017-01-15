@@ -467,7 +467,7 @@ a:focus {
   background-color: inherit;
 }
 .section-container {
-  padding-top: 2.541em; /* 61px */
+  padding-top: 3em;
   padding-bottom: 2.541em; /* 61px */
 }
 .popular-container {
@@ -696,7 +696,7 @@ a:focus {
 }
 .hr-previous-articles {
   margin-top: 0.833em;
-  margin-bottom: 2.666em; /* 64px */
+  margin-bottom: 3.2em;
 }
 @media (max-width: 767px) {
   .hr-previous-articles {
