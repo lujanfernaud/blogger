@@ -66,7 +66,6 @@ a:focus {
 /* Helper classes */
 
 .v-offset-10 {
-  /*padding-top: 10px;*/
   padding-top: 0.416em;
 }
 .v-offset-30 {
@@ -362,7 +361,6 @@ a:focus {
   position: relative;
   width: 100%;
   height: 100%;
-  /*margin-bottom: 9px;*/
   text-align: center;
   background-color: #001d40;
 }
@@ -710,16 +708,6 @@ a:focus {
     margin-top: 0;
   }
 }
-/*.hr-article-heading {
-  bottom: 0;
-  margin: 0 auto 3.25em;
-  border-top: 1px solid #303030;
-}
-@media (max-width: 767px) {
-  .hr-article-heading {
-    margin: 0 auto 2em;
-  }
-}*/
 .article-container .hr-decorative {
   display: block;
   width: 50%;
