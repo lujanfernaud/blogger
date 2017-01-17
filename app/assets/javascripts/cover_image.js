@@ -43,17 +43,22 @@ function adjustHeader() {
    */
   } else {
 
+    // Remove top positioning in article header and chevron
+    $(".post-heading").css("top", "");
+    $(".row-fa").css("top", "");
+
     var headerPadding = parseInt($(".intro-header").css("padding-top"));
-    var headingHeight = $(".site-heading").outerHeight();
     var home          = document.getElementsByClassName("featured-header-xs").length > 0;
 
     // Landscape orientation:
     if (window.innerWidth > window.innerHeight) {
 
       if (home) {
+        var headingHeight = $(".site-heading").outerHeight();
         $(".featured-header-xs").css("height", window.innerHeight - (headingHeight + headerPadding));
       } else {
-        var navbarHeight = parseInt($(".navbar").css("min-height"));
+        var headingHeight = $(".post-heading-xs").outerHeight();
+        var navbarHeight  = parseInt($(".navbar").css("min-height"));
         $(".post-header-xs").css("height", window.innerHeight - navbarHeight);
       };
 
@@ -71,9 +76,11 @@ function adjustHeader() {
       };
 
       if (home) {
+        var headingHeight = $(".site-heading").outerHeight();
         $(".featured-header-xs").css("height", headerHeight - (headingHeight + headerPadding));
       } else {
-        var navbarHeight = parseInt($(".navbar").css("min-height"));
+        var headingHeight = $(".post-heading-xs").outerHeight();
+        var navbarHeight  = parseInt($(".navbar").css("min-height"));
         $(".post-header-xs").css("height", headerHeight - navbarHeight);
       };
 
