@@ -154,10 +154,11 @@ a:focus {
   top: 0;
   border-width: 0;
 }
-.navbar-fixed-top .navbar-collapse,
-.navbar-fixed-bottom .navbar-collapse {
-  max-height: 100%;
-  border-bottom: 2px solid #e7e7e7;
+@media (max-width: 767px) {
+  .navbar-fixed-top .navbar-collapse {
+    max-height: 100%;
+    border-bottom: 2px solid #e7e7e7;
+  }
 }
 
 /* Navbar for articles, meant to be shown mainly in laptops and desktops */
