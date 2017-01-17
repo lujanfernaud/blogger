@@ -128,7 +128,7 @@ a:focus {
 @media (max-width: 767px) {
   .navbar-default .navbar-nav > li > a {
     font-size: 0.75em;
-    line-height: 2.369em;
+    line-height: 2.66em;
   }
 }
 .navbar-default .navbar-nav > li > a:hover,
@@ -153,6 +153,11 @@ a:focus {
 .navbar-fixed-top {
   top: 0;
   border-width: 0;
+}
+.navbar-fixed-top .navbar-collapse,
+.navbar-fixed-bottom .navbar-collapse {
+  max-height: 100%;
+  border-bottom: 2px solid #e7e7e7;
 }
 
 /* Navbar for articles, meant to be shown mainly in laptops and desktops */
