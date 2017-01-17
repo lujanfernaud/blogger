@@ -38,33 +38,27 @@ function adjustHeader() {
 
     };
 
-  // If the screen is smaller than 767px:
+  /**
+   * Screen smaller than 767px:
+   */
   } else {
 
-    var home = document.getElementsByClassName("featured-header-xs").length > 0;
+    var headerPadding = parseInt($(".intro-header").css("padding-top"));
+    var headingHeight = $(".site-heading").outerHeight();
+    var home          = document.getElementsByClassName("featured-header-xs").length > 0;
 
     // Landscape orientation:
     if (window.innerWidth > window.innerHeight) {
 
-      console.log("Inside 'landscape orientation'");
-
       if (home) {
-
-        var headerPadding = parseInt($(".intro-header").css("padding-top"));
-        var headingHeight = $(".site-heading").outerHeight();
         $(".featured-header-xs").css("height", window.innerHeight - (headingHeight + headerPadding));
-
       } else {
-
         var navbarHeight = parseInt($(".navbar").css("min-height"));
         $(".post-header-xs").css("height", window.innerHeight - navbarHeight);
-
       };
 
     // Portrait orientation:
     } else {
-
-      console.log("Inside 'portrait orientation'");
 
       var headerHeight;
       // Set headerHeight always to the size of the shortest side.
@@ -77,20 +71,13 @@ function adjustHeader() {
       };
 
       if (home) {
-
-        var headerPadding = parseInt($(".intro-header").css("padding-top"));
-        var headingHeight = $(".site-heading").outerHeight();
         $(".featured-header-xs").css("height", headerHeight - (headingHeight + headerPadding));
-
       } else {
-
         var navbarHeight = parseInt($(".navbar").css("min-height"));
         $(".post-header-xs").css("height", headerHeight - navbarHeight);
-
       };
 
     };
-
   };
 };
 
