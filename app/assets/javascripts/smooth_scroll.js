@@ -2,13 +2,13 @@ function smoothScroll() {
 
   $('a[href*="#"]:not([href="#"])').click(function() {
 
-      function stopAnimationIfUserScrolls() {
-        $('html, body').on("scroll mousedown DOMMouseScroll mousewheel touchstart keyup", function(e) {
-          if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel" || e.type === "touchstart") {
-            $('html, body').stop();
-          };
-        });
-      };
+    function stopAnimationIfUserScrolls() {
+      $('html, body').on("scroll mousedown DOMMouseScroll mousewheel touchstart keyup", function(e) {
+        if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel" || e.type === "touchstart") {
+          $('html, body').stop();
+        };
+      });
+    };
 
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
