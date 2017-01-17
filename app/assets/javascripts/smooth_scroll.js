@@ -4,8 +4,16 @@ function smoothScroll() {
 
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 
+      function stopAnimationIfUserScrolls() {
+        $('html, body').on("scroll mousedown DOMMouseScroll mousewheel touchstart keyup", function(e) {
+          if ( e.which > 0 || e.type === "mousedown" || e.type === "mousewheel" || e.type === "touchstart") {
+            $('html, body').stop();
+          }
+        });
+      };
+
       var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      target     = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 
       if (screen.width > 767) {
 
@@ -17,6 +25,7 @@ function smoothScroll() {
           $('html, body').animate({
             scrollTop: target.offset().top - (headingHeight + faHeight + (fontSize * 4))
           }, 1000);
+          stopAnimationIfUserScrolls();
           return false;
         }
 
@@ -28,6 +37,7 @@ function smoothScroll() {
           $('html, body').animate({
             scrollTop: target.offset().top - headingHeight
           }, 1000);
+          stopAnimationIfUserScrolls();
           return false;
         }
 
