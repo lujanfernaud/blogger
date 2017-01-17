@@ -1,19 +1,23 @@
 function adjustHeader() {
+
   if (screen.width > 767) {
+
+    var headerPadding = parseInt($(".intro-header").css("padding-top"));
+    var headingHeight = $(".post-heading").outerHeight();
+
+    function adjustChevron() {
+      var postHeadingTop = parseInt($(".post-heading").css("top"));
+      var faHeight       = $(".row-fa").outerHeight();
+      var fontSize       = parseInt($("body").css("font-size"));
+      $(".row-fa").css("top", postHeadingTop - faHeight - (fontSize * 2));
+    };
 
     // Landscape orientation:
     if (screen.innerWidth > screen.innerHeight) {
 
       $(".post-header").css("height", window.innerHeight);
-
-      var headerPadding = parseInt($(".intro-header").css("padding-top"));
-      var headingHeight = $(".post-heading").outerHeight();
       $(".post-heading").css("top", window.innerHeight - (headingHeight + headerPadding));
-
-      var postHeadingTop = parseInt($(".post-heading").css("top"));
-      var faHeight = $(".row-fa").outerHeight();
-      var fontSize = parseInt($("body").css("font-size"));
-      $(".row-fa").css("top", postHeadingTop - faHeight - (fontSize * 2));
+      adjustChevron();
 
     // Portrait orientation:
     } else {
@@ -27,16 +31,10 @@ function adjustHeader() {
       } else {
         headerHeight = window.innerWidth;
       };
+
       $(".post-header").css("height", headerHeight);
-
-      var headerPadding = parseInt($(".intro-header").css("padding-top"));
-      var headingHeight = $(".post-heading").outerHeight();
       $(".post-heading").css("top", headerHeight - (headingHeight + headerPadding));
-
-      var postHeadingTop = parseInt($(".post-heading").css("top"));
-      var faHeight = $(".row-fa").outerHeight();
-      var fontSize = parseInt($("body").css("font-size"));
-      $(".row-fa").css("top", postHeadingTop - faHeight - (fontSize * 2));
+      adjustChevron();
 
     };
 
@@ -47,6 +45,8 @@ function adjustHeader() {
 
     // Landscape orientation:
     if (window.innerWidth > window.innerHeight) {
+
+      console.log("Inside 'landscape orientation'");
 
       if (home) {
 
@@ -63,6 +63,8 @@ function adjustHeader() {
 
     // Portrait orientation:
     } else {
+
+      console.log("Inside 'portrait orientation'");
 
       var headerHeight;
       // Set headerHeight always to the size of the shortest side.
