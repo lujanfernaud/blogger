@@ -570,6 +570,14 @@ a:focus {
     font-size: 0.90em;
   }
 }
+@media (max-width: 479px) {
+  .view-count {
+    display: block;
+  }
+  .view-count-divider {
+    display: none;
+  }
+}
 .post-preview > .post-meta > a {
     color: #303030;
     text-decoration: none;
