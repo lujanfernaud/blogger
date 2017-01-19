@@ -21,7 +21,7 @@
             <div class="col-sm-10 col-xs-12 col-article post-preview">
               <h2 class="post-title"><%= link_to article.title, article_path(article) %></h2>
               <p class="post-meta">by <%= link_to article.author.username, author_path(article.author) %>
-                 on <%= article.created_at.strftime('%b %d, %Y') %> | <%= article.view_count %> views</p>
+                 on <%= article.created_at.strftime('%b %d, %Y') %><span class="view-count"><span class="view-count-divider"> | </span><%= article.view_count %> views</span></p>
             </div>
           </div>
           <div class="row">
