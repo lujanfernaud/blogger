@@ -84,33 +84,37 @@
 
 	<!-- Hidden in XS -->
 
-	<header class="hidden-xs intro-header post-header" <%= show_image_if_exists(@article, :large) %>>
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-10 col-lg-offset-1 col-xs-12">
+	<header class="hidden-xs header-container">
+		<div class="cover-image" <%= show_image_if_exists(@article, :large) %>></div>
+		<div class="intro-header post-header">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-10 col-lg-offset-1 col-xs-12">
 
-					<div class="row">
-						<div class="row-fa">
-							<a href="#article">
-								<i class="fa fa-chevron-down fa-inverse fa-2x" aria-hidden="true"></i>
-							</a>
+						<div class="row">
+							<div class="row-fa">
+								<a href="#article">
+									<i class="fa fa-chevron-down fa-inverse fa-2x" aria-hidden="true"></i>
+								</a>
+							</div>
 						</div>
-					</div>
 
-					<div class="post-heading">
-						<h1><%= @article.title %></h1>
-						<span class="meta">by <%= link_to @article.author.username, author_path(@article.author) %> on <%= @article.created_at.strftime('%b %d, %Y') %></span>
-					</div>
+						<div class="post-heading">
+							<h1><%= @article.title %></h1>
+							<span class="meta">by <%= link_to @article.author.username, author_path(@article.author) %> on <%= @article.created_at.strftime('%b %d, %Y') %></span>
+						</div>
 
-				</div><!-- /.col-* -->
-			</div><!-- /.row -->
-		</div><!-- /.container -->
+					</div><!-- /.col-* -->
+				</div><!-- /.row -->
+			</div><!-- /.container -->
+		</div><!-- /.intro-header post-header -->
 	</header>
 
 	<!-- Visible only in XS -->
 
 	<header class="visible-xs intro-header">
-		<div class="post-header-xs" <%= show_image_if_exists(@article, :small) %>>
+		<div class="post-header-xs">
+			<div class="cover-image" <%= show_image_if_exists(@article, :large) %>></div>
 			<div class="row">
 
 				<div class="row-fa">
