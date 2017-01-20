@@ -357,12 +357,19 @@ a:focus {
 /* Header in article, showing a cover image of the article */
 /* (We use cover_image.js to help with the sizing and positioning.) */
 
+.header-container {
+  background-color: #001d40;
+}
+.cover-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
 .post-header {
   position: relative;
   width: 100%;
   height: 100%;
   text-align: center;
-  background-color: #001d40;
 }
 .post-header-xs {
   position: relative;
