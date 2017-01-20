@@ -4,7 +4,6 @@ function changeHeaderOpacity() {
   var headerHeight = header.outerHeight();
 
   $(document).scroll(function() {
-
     var scrollPercent = (headerHeight - window.scrollY) / headerHeight;
 
     if (scrollPercent >= 0) {
