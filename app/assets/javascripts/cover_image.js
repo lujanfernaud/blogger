@@ -13,7 +13,7 @@ function adjustHeader() {
     };
 
     // Landscape orientation:
-    if (screen.innerWidth > screen.innerHeight) {
+    if (window.innerWidth > window.innerHeight) {
 
       $(".post-header").css("height", window.innerHeight);
       // We take out one to fix a positioning bug on iPads.
