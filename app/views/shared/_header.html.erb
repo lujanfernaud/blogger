@@ -23,7 +23,7 @@
 						<p>Latest article</p>
 					</div>
 					<div class="site-heading">
-						<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
+						<h2 class="h1"><%= link_to @latest_article.title, article_path(@latest_article) %></h2>
 						<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
 					</div>
 				</div>
@@ -45,7 +45,7 @@
 								<p>Latest article</p>
 							</div>
 							<div class="site-heading">
-								<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
+								<h2 class="h1"><%= link_to @latest_article.title, article_path(@latest_article) %></h2>
 								<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
 							</div>
 						</div>
@@ -69,7 +69,7 @@
 								<p>Latest article</p>
 							</div>
 							<div class="site-heading">
-								<h1><%= link_to @latest_article.title, article_path(@latest_article) %></h1>
+								<h2 class="h1"><%= link_to @latest_article.title, article_path(@latest_article) %></h2>
 								<span class="meta">by <%= link_to @latest_article.author.username, author_path(@latest_article.author) %> on <%= @latest_article.created_at.strftime('%b %d, %Y') %></span>
 							</div>
 						</div>

@@ -262,8 +262,12 @@ a:focus {
   text-align: center;
   background-color: #001d40;
 }
-.latest-article-container-xs .site-heading > h1 {
+.latest-article-container-xs .site-heading > h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 1.777em;
+  font-weight: 800;
+  line-height: 1.1;
 }
 .latest-article-container-xs .site-heading .meta {
   font-family: 'Lora', 'Times New Roman', serif;
@@ -339,8 +343,12 @@ a:focus {
   text-align: center;
   background-color: #fff;
 }
-.latest-article-container .site-heading > h1 {
+.latest-article-container .site-heading > h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
   font-size: 1.777em;
+  font-weight: 800;
+  line-height: 1.1;
 }
 .latest-article-container .site-heading .meta {
   font-family: 'Lora', 'Times New Roman', serif;
