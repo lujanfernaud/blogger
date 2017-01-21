@@ -15,6 +15,7 @@ function adjustHeader() {
     // Landscape orientation:
     if (window.innerWidth > window.innerHeight) {
 
+      $(".cover-image").css("height", window.innerHeight);
       $(".post-header").css("height", window.innerHeight);
       // We take out one to fix a positioning bug on iPads.
       $(".post-heading").css("top", window.innerHeight - (headingHeight + headerPadding - 1));
@@ -62,6 +63,7 @@ function adjustHeader() {
       } else {
         var headingHeight = $(".post-heading-xs").outerHeight();
         var navbarHeight  = parseInt($(".navbar").css("min-height"));
+        $(".cover-image").css("height", window.innerHeight - navbarHeight);
         $(".post-header-xs").css("height", window.innerHeight - navbarHeight);
       };
 
@@ -84,6 +86,7 @@ function adjustHeader() {
       } else {
         var headingHeight = $(".post-heading-xs").outerHeight();
         var navbarHeight  = parseInt($(".navbar").css("min-height"));
+        $(".cover-image").css("height", headerHeight - navbarHeight);
         $(".post-header-xs").css("height", headerHeight - navbarHeight);
       };
 
