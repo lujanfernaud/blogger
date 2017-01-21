@@ -14,7 +14,7 @@ function smoothScroll() {
 
       var target = $(this.hash);
       target     = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (!target.length) { throw new Error("Section id not found") }
+      if (!target.length) { throw new Error("Section id not found"); };
 
       if (screen.width > 767) {
 
