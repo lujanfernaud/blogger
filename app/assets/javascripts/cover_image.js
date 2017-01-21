@@ -91,12 +91,12 @@ function adjustHeader() {
   };
 };
 
-$(document).on('turbolinks:load', function() {
+$(document).on("turbolinks:load", function() {
   adjustHeader();
 });
 
-$(function () {
-  $(window).on("load resize", function () {
+$(function() {
+  $(window).on("load resize", function() {
   adjustHeader();
   });
 });

@@ -43,12 +43,12 @@ function smoothScroll() {
   });
 };
 
-$(document).on('turbolinks:load', function() {
+$(document).on("turbolinks:load", function() {
   smoothScroll();
 });
 
-$(function () {
-  $(window).on("load resize", function () {
+$(function() {
+  $(window).on("load resize", function() {
   smoothScroll();
   });
 });

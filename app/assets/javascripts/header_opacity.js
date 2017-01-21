@@ -15,12 +15,12 @@ function changeHeaderOpacity() {
   });
 };
 
-$(document).on('turbolinks:load', function() {
+$(document).on("turbolinks:load", function() {
   changeHeaderOpacity();
 });
 
-$(function () {
-  $(window).on("load resize", function () {
+$(function() {
+  $(window).on("load resize", function() {
   changeHeaderOpacity();
   });
 });
