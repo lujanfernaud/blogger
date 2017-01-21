@@ -16,7 +16,8 @@ function adjustHeader() {
     if (screen.innerWidth > screen.innerHeight) {
 
       $(".post-header").css("height", window.innerHeight);
-      $(".post-heading").css("top", window.innerHeight - (headingHeight + headerPadding));
+      // We take out one to fix a positioning bug on iPads.
+      $(".post-heading").css("top", window.innerHeight - (headingHeight + headerPadding - 1));
       adjustChevron();
 
     // Portrait orientation:
@@ -34,7 +35,8 @@ function adjustHeader() {
 
       $(".cover-image").css("height", headerHeight);
       $(".post-header").css("height", headerHeight);
-      $(".post-heading").css("top", headerHeight - (headingHeight + headerPadding));
+      // We take out one to fix a positioning bug on iPads.
+      $(".post-heading").css("top", headerHeight - (headingHeight + headerPadding - 1));
       adjustChevron();
 
     };
@@ -44,7 +46,7 @@ function adjustHeader() {
    */
   } else {
 
-    // Remove top positioning in article header and chevron
+    // Remove top positioning in article header and chevron.
     $(".post-heading").css("top", "");
     $(".row-fa").css("top", "");
 
