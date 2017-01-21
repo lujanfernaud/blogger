@@ -11,8 +11,7 @@ module ArticlesHelper
   def show_image_if_exists(article, size)
     return unless article.image.exists?
     "style\=\"
-      background\: url\(\'#{article.image.url(size)}\'\) center center no-repeat\;
-      background-size\: cover\;
+      background\: url\(\'#{article.image.url(size)}\'\) no-repeat center center \/ cover\;
         \"".html_safe
   end
 end
