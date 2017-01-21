@@ -77,10 +77,10 @@ a:focus {
 }
 .dropcap {
   float: left;
-  padding-right: 9px;
-  /*font: 700 5.7em/0.85em Georgia,"Times New Roman",Times,serif;*/
+  padding-top: 0.175em;
+  padding-right: 0.065em;
   font-size: 5.7em;
-  line-height: 0.85em;
+  line-height: 0.5em;
   font-weight: 700;
   color: #001d40;
 }
