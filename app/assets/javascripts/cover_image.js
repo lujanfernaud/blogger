@@ -32,6 +32,7 @@ function adjustHeader() {
         headerHeight = window.innerWidth;
       };
 
+      $(".cover-image").css("height", headerHeight);
       $(".post-header").css("height", headerHeight);
       $(".post-heading").css("top", headerHeight - (headingHeight + headerPadding));
       adjustChevron();
