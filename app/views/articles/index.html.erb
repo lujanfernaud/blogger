@@ -1,5 +1,3 @@
-<% content_for :head, auto_discovery_link_tag(:rss, articles_url) %>
-
 <%= render 'shared/shim' %>
 <%= render 'shared/navigation' %>
 <%= render 'shared/header' %>
@@ -9,16 +7,7 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
 
       <section class="row">
-        <div class="col-xs-12 section-container">
-
-          <div class="row">
-            <div class="previous-articles">
-              <h1 class="h1-previous-articles">Previous articles</h1>
-            </div>
-          </div>
-          <div class="row">
-            <hr class="hr-small hr-previous-articles">
-          </div>
+        <div class="col-xs-12 section-container all-articles-container">
 
         	<% @articles.each do |article| %>
           <article class="row row-article">
@@ -38,9 +27,8 @@
 
           <div class="row">
             <div class="container-bottom-links text-center">
-              <p>Do you want more articles?
-                 Check out <%= link_to 'the archive', archive_index_path %>
-                 or our <%= link_to 'most popular articles', popular_path %>.
+              <p>Don't forget to check
+                 our <%= link_to 'most popular articles', popular_path %>.
               </p>
             </div>
           </div>
