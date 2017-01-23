@@ -509,6 +509,9 @@ a:focus {
   margin-left: auto;
   margin-right: auto;
 }
+.all-articles-container {
+  padding-top: 5.25em; /* 126px */
+}
 
 /* Section headings */
 
