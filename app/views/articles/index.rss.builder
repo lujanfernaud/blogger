@@ -1,10 +1,10 @@
-xml.instruct! :xml, :version => "1.0" 
+xml.instruct! :xml, :version => "1.0"
 xml.rss :version => "2.0" do
   xml.channel do
-    xml.title "Jumpstart Lab's Blogger Project"
-    xml.description "A simple blog with Rails"
+    xml.title "Blogo"
+    xml.description "A simple blog built with Rails"
     xml.link articles_url
-    
+
     @articles.each do |article|
       xml.item do
         xml.title article.title
