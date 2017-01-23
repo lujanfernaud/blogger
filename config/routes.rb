@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   mount Ckeditor::Engine => '/ckeditor'
-  root to: 'articles#index'
+  root to: 'articles#home'
 
   resources :articles do
     resources :comments

@@ -5,8 +5,12 @@ class ArticlesController < ApplicationController
   include ArticlesHelper
 
   def index
+    @articles = Article.all.reverse
+  end
+
+  def home
     @latest_article = Article.last
-    @articles = Article.all.reverse[1..6]
+    @articles_in_home = Article.all.reverse[1..6]
   end
 
   def show

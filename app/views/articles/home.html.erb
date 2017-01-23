@@ -1,0 +1,55 @@
+<% content_for :head, auto_discovery_link_tag(:rss, articles_url) %>
+
+<%= render 'shared/shim' %>
+<%= render 'shared/navigation' %>
+<%= render 'shared/header' %>
+
+<div class="container container-index">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-xs-12">
+
+      <section class="row">
+        <div class="col-xs-12 section-container">
+
+          <div class="row">
+            <div class="previous-articles">
+              <h1 class="h1-previous-articles">Previous articles</h1>
+            </div>
+          </div>
+          <div class="row">
+            <hr class="hr-small hr-previous-articles">
+          </div>
+
+          <% @articles_in_home.each do |article| %>
+          <article class="row row-article">
+            <!-- Hidden in XS to show a very small thumbnail -->
+            <div class="col-sm-2 col-xs-12 hidden-xs col-image" <%= show_image_if_exists(article, :thumb) %>></div>
+            <!-- Visible in XS to show a wide image -->
+            <div class="col-sm-2 col-xs-12 visible-xs col-image" <%= show_image_if_exists(article, :small) %>></div>
+            <div class="col-sm-10 col-xs-12 col-article post-preview">
+              <h2 class="post-title"><%= link_to article.title, article_path(article) %></h2>
+              <p class="post-meta">by <%= link_to article.author.username, author_path(article.author) %> on <time datetime="<%= article.created_at %>"><%= article.created_at.strftime('%b %d, %Y') %></time></p>
+            </div>
+          </article>
+          <div class="row">
+            <hr class="hr-index">
+          </div>
+          <% end %>
+
+          <div class="row">
+            <div class="container-bottom-links text-center">
+              <p>Do you want more articles?
+                 Check out <%= link_to 'the archive', archive_index_path %>
+                 or our <%= link_to 'most popular articles', popular_path %>.
+              </p>
+            </div>
+          </div>
+
+        </div><!-- section-container -->
+      </section><!-- row -->
+
+    </div><!-- col-* -->
+  </div><!-- row -->
+</div><!-- container -->
+
+<%= render 'shared/footer' %>
