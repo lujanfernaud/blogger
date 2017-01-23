@@ -21,9 +21,6 @@ class ArticlesController < ApplicationController
     @title = "Most Popular Articles"
   end
 
-  def about
-  end
-
   def new
     @article = Article.new
     @title = "New article"

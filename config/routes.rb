@@ -15,6 +15,4 @@ Rails.application.routes.draw do
   get 'login'    => 'author_sessions#new'
   get 'logout'   => 'author_sessions#destroy'
   get 'popular'  => 'articles#popular'
-  get 'about'    => 'articles#about'
-  get 'contact'  => 'articles#contact'
 end
