@@ -6,6 +6,7 @@ class ArticlesController < ApplicationController
 
   def index
     @articles = Article.all.reverse
+    @title = "All Articles"
   end
 
   def home
