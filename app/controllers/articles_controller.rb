@@ -1,5 +1,5 @@
 class ArticlesController < ApplicationController
-  before_filter :require_login, except: [:index, :show, :popular, :about]
+  before_filter :require_login, except: [:index, :home, :show, :popular, :about]
   before_filter :find_article, only: [:show, :edit, :update, :destroy]
 
   include ArticlesHelper
