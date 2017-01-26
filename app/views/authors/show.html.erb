@@ -36,7 +36,7 @@
             <% end %>
   				<% end %>
 
-          <% if logged_in? %>
+          <% if logged_in? && !demo_user? %>
             <div class="row">
               <div class="container-bottom-links text-center">
                 <p><%= link_to 'Edit Author', edit_author_path(@author) %></p>
