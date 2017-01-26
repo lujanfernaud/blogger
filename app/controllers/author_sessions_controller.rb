@@ -17,8 +17,8 @@ class AuthorSessionsController < ApplicationController
   end
 
   def destroy
-    if current_user == demo_user
-      demo_user.articles.destroy_all if demo_user.articles.count > 0
+    if demo_user?
+      demo_user.articles.destroy_all if demo_user.articles.any?
     end
 
     logout
