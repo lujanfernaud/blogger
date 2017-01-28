@@ -1,6 +1,12 @@
 <div class="comment">
 	<h2 class="h3 comment-author">
     <%= comment.author_name %>
+    <% if admin? %>
+      <div class="comment-delete">
+        <%= link_to "Delete comment", article_comment_path(@article.id, comment), method: :delete,
+           data: {confirm: "Are you sure to delete the comment?"}, class: "comment-delete-link" %>
+      </div>
+    <% end %>
   </h2>
   <span class="comment-created-at">on <time datetime="<%= comment.created_at %>"><%= comment.created_at.strftime('%b %d, %Y') %></time>
   </span>
