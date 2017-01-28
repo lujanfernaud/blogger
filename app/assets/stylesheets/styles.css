@@ -798,6 +798,7 @@ form.edit_article .submit {
   padding-top: 0;
 }
 .comment {
+  position: relative;
   margin-bottom: 2.2em;
   padding-top: 0.6em;
   padding-bottom: 0.5em;
@@ -811,6 +812,15 @@ form.edit_article .submit {
   margin-bottom: 0;
   font-weight: 600;
   line-height: 1;
+}
+.comment-delete {
+  position: absolute;
+  top: 0.6em;
+  right: 0.7em;
+}
+.comment-delete-link {
+  font-size: 0.75em;
+  font-weight: 400;
 }
 .comment-created-at {
   font-size: 0.75em;
