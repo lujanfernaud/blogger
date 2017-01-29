@@ -16,7 +16,7 @@ class CommentsController < ApplicationController
     @comment = Comment.find(params[:id])
     @comment.destroy
 
-    redirect_to article_path(@comment.article)
+    redirect_to (article_path(@comment.article) + "#comments")
   end
 
   private
