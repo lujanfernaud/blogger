@@ -4,7 +4,8 @@
     <% if admin? %>
       <div class="comment-delete">
         <%= link_to "Delete comment", article_comment_path(@article.id, comment), method: :delete,
-           data: {confirm: "Are you sure to delete the comment?"}, class: "comment-delete-link" %>
+           data: {confirm: "Are you sure you want to delete comment ##{comment_number(comment)}?"},
+           class: "comment-delete-link" %>
       </div>
     <% end %>
   </h2>
