@@ -37,6 +37,7 @@ class ArticlesController < ApplicationController
 
   def update
     @article.update(article_params)
+    @article.delete_empty_tags
 
     flash.notice = "Article '#{@article.title}' updated."
 
