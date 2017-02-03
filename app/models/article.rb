@@ -22,6 +22,12 @@ class Article < ActiveRecord::Base
     self.tags         = new_or_found_tags
   end
 
+  # Delete tags that have no articles associated.
+  def delete_empty_tags
+    tags = Tag.all
+    tags.each { |tag| tag.delete if tag.articles.count == 0 }
+  end
+
   def increase_view_count
     self.view_count += 1
     self.save
