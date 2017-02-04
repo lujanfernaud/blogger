@@ -24,8 +24,10 @@ class Article < ActiveRecord::Base
 
   # Delete tags that have no articles associated.
   def delete_empty_tags
-    tags = Tag.all
-    tags.each { |tag| tag.delete if tag.articles.count == 0 }
+    sorted_tags = Tag.all.sort_by { |tag| tag.articles.count }
+    return if sorted_tags.first.articles.count > 0
+
+    sorted_tags.each { |tag| tag.delete if tag.articles.count == 0 }
   end
 
   def increase_view_count
