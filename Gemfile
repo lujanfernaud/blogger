@@ -31,6 +31,8 @@ gem 'paperclip'
 # Use Sorcery for authentication
 gem 'sorcery'
 
+# Pretty print Ruby objects
+gem 'awesome_print', '~> 1.7'
 # Use pry-byebug as a debugger
 gem 'pry-byebug'
 # Use specific version of Rake to solve some problems
