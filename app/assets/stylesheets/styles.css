@@ -544,8 +544,17 @@ a:focus {
   margin-top: 0.5em;
 }
 .h2-archive {
-  font-size: 1.333em;
+  padding-top: 0.8em;
+  padding-bottom: 1.7em;
+  font-size: 1.8em;
   font-weight: 800;
+  font-style: italic;
+  text-align: center;
+}
+@media (max-width: 767px) {
+  .h2-archive {
+    padding-top: 0.4em;
+  }
 }
 
 /* Individual articles previews */
