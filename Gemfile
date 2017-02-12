@@ -71,4 +71,6 @@ end
 group :production do
   # Use PostgreSQL as the database for production (Heroku)
   gem 'pg'
+  # Enable serving assets in production and setting logger to standard out
+  gem 'rails_12factor'
 end
