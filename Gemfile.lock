@@ -118,6 +118,7 @@ GEM
       cocaine (~> 0.5.5)
       mime-types
       mimemagic (~> 0.3.0)
+    pg (0.18.4)
     pry (0.10.4)
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
@@ -212,6 +213,7 @@ DEPENDENCIES
   jquery-rails
   jquery-turbolinks
   paperclip
+  pg
   pry-byebug
   rails (= 4.2.6)
   rake (~> 11.3.0)
@@ -225,4 +227,4 @@ DEPENDENCIES
   web-console (~> 2.0)
 
 BUNDLED WITH
-   1.12.5
+   1.14.3
