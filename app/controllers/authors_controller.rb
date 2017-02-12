@@ -1,8 +1,13 @@
 class AuthorsController < ApplicationController
   before_action :set_author, only: [:show, :edit, :update, :destroy]
 
+  before_filter :user_is_not_admin, except: [:show]
   before_filter :zero_authors_or_authenticated, only: [:new, :create]
-  before_filter :require_login, except: [:new, :create, :show]
+  before_filter :require_login, except: [:show]
+
+  def user_is_not_admin
+    redirect_to root_path unless admin?
+  end
 
   def zero_authors_or_authenticated
     return if Author.count.zero? || current_user
