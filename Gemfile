@@ -3,6 +3,8 @@ ruby '2.3.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.6'
+# Use PostgreSQL
+gem 'pg'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -35,7 +37,7 @@ gem 'awesome_print', '~> 1.7'
 # Use pry-byebug as a debugger
 gem 'pry-byebug'
 # Use specific version of Rake to solve some problems
-gem 'rake', '~> 11.3.0'
+gem 'rake', '~> 12.0.0'
 
 # Rake tasks to add Bootstrap, Font Awesome, and Start Bootstrap Landing Pages to a Rails app
 gem 'frontend-generators'
@@ -54,9 +56,6 @@ gem 'inline_svg'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Use SQLite as the database for development and testing
-  gem 'sqlite3'
-
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
 end
@@ -70,8 +69,6 @@ group :development do
 end
 
 group :production do
-  # Use PostgreSQL as the database for production (Heroku)
-  gem 'pg'
   # Enable serving assets in production and setting logger to standard out
   gem 'rails_12factor'
 end
