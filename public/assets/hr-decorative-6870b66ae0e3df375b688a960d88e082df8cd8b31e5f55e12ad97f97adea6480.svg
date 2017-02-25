@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="8" preserveAspectRatio="none" viewBox="0 0 400 8" id="svg2">
+  <defs id="defs4"/>
+  <g transform="translate(0 -1044.3622)" id="layer1">
+    <path d="m186.8 1046.2c0 0-50.3 2.7-140.3 2.7 90 0 140.3 2.7 140.3 2.7 0 0 5-2.5 19.7-2.7-14.7-0.2-19.7-2.7-19.7-2.7z" id="path2874"/>
+    <path d="m205 12.5a2.5 2.5 0 1 1-5 0 2.5 2.5 0 1 1 5 0z" transform="translate(-2.5 1036.3622)" id="path2872"/>
+    <use transform="matrix(-1 0 0 1 400 0)" id="use2879" width="400" height="20" xlink:href="#path2874"/>
+  </g>
+</svg>
