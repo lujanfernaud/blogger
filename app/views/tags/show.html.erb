@@ -18,7 +18,7 @@
             <hr class="hr-small hr-previous-articles">
           </div>
 
-          <% @tag.articles.each do |article| %>
+          <% @articles.each do |article| %>
             <div class="row row-article">
               <!-- Hidden in XS to show a very small thumbnail -->
               <div class="col-sm-2 col-xs-12 hidden-xs col-image" <%= show_image_if_exists(article, :thumb) %>></div>
