@@ -5,13 +5,13 @@ class ArticlesController < ApplicationController
   include ArticlesHelper
 
   def index
-    @articles = Article.all.reverse
+    @articles = Article.all.sort_by(&:created_at).reverse
     @title = "All Articles"
   end
 
   def home
     @latest_article = Article.last
-    @articles_in_home = Article.all.reverse[1..6]
+    @articles_in_home = Article.all.sort_by(&:created_at).reverse[1..6]
   end
 
   def show

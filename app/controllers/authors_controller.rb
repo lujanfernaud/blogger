@@ -22,7 +22,7 @@ class AuthorsController < ApplicationController
 
   def show
     @title = set_author.username
-    @articles = @author.articles.reverse
+    @articles = @author.articles.sort_by(&:created_at).reverse
   end
 
   def new
