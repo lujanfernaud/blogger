@@ -10,6 +10,7 @@ class TagsController < ApplicationController
     @tag = Tag.find(params[:id])
     @title = "##{@tag.name.capitalize_all_words}"
     # capitalize_all_words comes from /config/initializers/string.rb
+    @articles = @tag.articles.sort_by(&:created_at).reverse
   end
 
   def destroy
