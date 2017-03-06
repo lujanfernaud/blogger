@@ -2,7 +2,7 @@
 
 	<!-- Visible only in XS to resize header image -->
 
-	<header class="visible-xs intro-header">
+	<header class="visible-xs intro-header intro-header-xs">
 		<div class="featured-header-xs" <%= show_image_if_exists(@latest_article, :small) %>>
 			<div class="container">
 				<div class="row">
@@ -34,7 +34,8 @@
 
 	<!-- Visible only in SM and MD to resize header image -->
 
-	<header class="visible-sm visible-md intro-header featured-header" <%= show_image_if_exists(@latest_article, :medium) %>>
+	<header class="visible-sm visible-md intro-header featured-header">
+		<div class="featured-image" <%= show_image_if_exists(@latest_article, :medium) %>></div>
 		<div class="container container-index full-height">
 			<div class="row full-height">
 				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 full-height">
@@ -58,7 +59,8 @@
 
 	<!-- Hidden in XS, SM, and MD to resize header image -->
 
-	<header class="hidden-xs hidden-sm hidden-md intro-header featured-header" <%= show_image_if_exists(@latest_article, :large) %>>
+	<header class="hidden-xs hidden-sm hidden-md intro-header featured-header">
+		<div class="featured-image" <%= show_image_if_exists(@latest_article, :large) %>></div>
 		<div class="container container-index full-height">
 			<div class="row full-height">
 				<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 full-height">

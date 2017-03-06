@@ -229,7 +229,6 @@ a:focus {
   height: 100%;
   min-height: 150px;
   text-align: center;
-  background-color: #001d40;
 }
 .latest-article-tab {
   position: absolute;
@@ -314,6 +313,25 @@ a:focus {
   .featured-header {
     min-height: 260px;
   }
+}
+.featured-image {
+  position: absolute;
+  width: 100%;
+  min-height: 720px; /* featured-header min-height + 60px of padding-top */
+  top: 0;
+}
+@media (max-height: 767px) {
+  .featured-image {
+    min-height: 480px;
+  }
+}
+@media (max-height: 360px) {
+  .featured-image {
+    min-height: 320px;
+  }
+}
+.intro-header-xs {
+  background-color: #ccc;
 }
 .latest-article-container {
   position: absolute;
