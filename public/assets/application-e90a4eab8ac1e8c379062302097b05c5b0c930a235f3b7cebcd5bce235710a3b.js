@@ -15137,7 +15137,7 @@ CKEDITOR.editorConfig = function(config) {
 }).call(this);
 function adjustHeader() {
 
-  if (screen.width > 767) {
+  if (window.innerWidth > 767) {
 
     var headerPadding = parseInt($(".intro-header").css("padding-top"));
     var headingHeight = $(".post-heading").outerHeight();
