@@ -1,4 +1,4 @@
-<div class="comment">
+<div class="comment" id="comment-<%= comment_number(comment) %>">
 	<h2 class="h3 comment-author">
     #<%= comment_number(comment) %>&nbsp;<%= comment.author_name %>
     <% if admin? %>

@@ -31,6 +31,8 @@ gem 'ckeditor'
 gem 'paperclip'
 # Use Sorcery for authentication
 gem 'sorcery'
+# Use Humanizer as a simple CAPTCHA
+gem 'humanizer'
 
 # Pretty print Ruby objects
 gem 'awesome_print', '~> 1.7'

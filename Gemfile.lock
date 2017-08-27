@@ -71,6 +71,7 @@ GEM
       turf (= 0.0.5)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
+    humanizer (2.6.4)
     i18n (0.8.0)
     inline_svg (0.11.1)
       activesupport (>= 4.0)
@@ -212,6 +213,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   font-awesome-rails
   frontend-generators
+  humanizer
   inline_svg
   jbuilder (~> 2.0)
   jquery-rails
@@ -234,4 +236,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.14.4
+   1.15.4

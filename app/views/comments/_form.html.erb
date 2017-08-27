@@ -1,5 +1,10 @@
-<div class="post-a-comment">
+<div class="post-a-comment" id="post-a-comment">
 	<h3 class="h2 h2-comments">Post a Comment</h3>
+
+	<% flash.each do |message_type, message| %>
+    <%= content_tag :div, message, class: "alert alert-#{message_type}" %>
+  <% end %>
+
 	<%= form_for [ @article, @comment ] do |f| %>
 		<div class="row">
 			<div class="form-group col-xs-12">
@@ -12,6 +17,14 @@
 			<div class="form-group col-xs-12">
 				<%= f.label :body, "Comment" %><br />
 				<%= f.text_area :body, class: 'form-control', rows: '8' %>
+			</div>
+		</div>
+
+		<div class="row v-offset-10">
+			<div class="form-group col-xs-12">
+				<%= f.label :humanizer_answer, @comment.humanizer_question %>
+				<%= f.text_field :humanizer_answer, class: 'form-control' %>
+				<%= f.hidden_field :humanizer_question_id %>
 			</div>
 		</div>
 
