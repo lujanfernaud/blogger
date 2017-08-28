@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170828070019) do
+ActiveRecord::Schema.define(version: 20170828130755) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -32,12 +32,13 @@ ActiveRecord::Schema.define(version: 20170828070019) do
   add_index "articles", ["author_id"], name: "index_articles_on_author_id", using: :btree
 
   create_table "authors", force: :cascade do |t|
-    t.text     "username",         null: false
-    t.text     "email",            null: false
-    t.text     "crypted_password", null: false
-    t.text     "salt",             null: false
+    t.text     "username",                         null: false
+    t.text     "email",                            null: false
+    t.text     "crypted_password",                 null: false
+    t.text     "salt",                             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "admin",            default: false
   end
 
   add_index "authors", ["email"], name: "index_authors_on_email", unique: true, using: :btree
