@@ -11,18 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161204174621) do
+ActiveRecord::Schema.define(version: 20170828070019) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "articles", force: :cascade do |t|
-    t.string   "title"
+    t.text     "title"
     t.text     "body"
     t.datetime "created_at",                     null: false
     t.datetime "updated_at",                     null: false
-    t.string   "image_file_name"
-    t.string   "image_content_type"
+    t.text     "image_file_name"
+    t.text     "image_content_type"
     t.integer  "image_file_size"
     t.datetime "image_updated_at"
     t.integer  "author_id"
@@ -32,10 +32,10 @@ ActiveRecord::Schema.define(version: 20161204174621) do
   add_index "articles", ["author_id"], name: "index_articles_on_author_id", using: :btree
 
   create_table "authors", force: :cascade do |t|
-    t.string   "username",         null: false
-    t.string   "email",            null: false
-    t.string   "crypted_password", null: false
-    t.string   "salt",             null: false
+    t.text     "username",         null: false
+    t.text     "email",            null: false
+    t.text     "crypted_password", null: false
+    t.text     "salt",             null: false
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -43,10 +43,10 @@ ActiveRecord::Schema.define(version: 20161204174621) do
   add_index "authors", ["email"], name: "index_authors_on_email", unique: true, using: :btree
 
   create_table "ckeditor_assets", force: :cascade do |t|
-    t.string   "data_file_name",               null: false
-    t.string   "data_content_type"
+    t.text     "data_file_name",               null: false
+    t.text     "data_content_type"
     t.integer  "data_file_size"
-    t.string   "data_fingerprint"
+    t.text     "data_fingerprint"
     t.integer  "assetable_id"
     t.string   "assetable_type",    limit: 30
     t.string   "type",              limit: 30
@@ -60,11 +60,12 @@ ActiveRecord::Schema.define(version: 20161204174621) do
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], name: "idx_ckeditor_assetable_type", using: :btree
 
   create_table "comments", force: :cascade do |t|
-    t.string   "author_name"
+    t.text     "author_name"
     t.text     "body"
     t.integer  "article_id"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
+    t.boolean  "bypass_humanizer", default: false
   end
 
   add_index "comments", ["article_id"], name: "index_comments_on_article_id", using: :btree
@@ -80,13 +81,9 @@ ActiveRecord::Schema.define(version: 20161204174621) do
   add_index "taggings", ["tag_id"], name: "index_taggings_on_tag_id", using: :btree
 
   create_table "tags", force: :cascade do |t|
-    t.string   "name"
+    t.text     "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
-  add_foreign_key "articles", "authors"
-  add_foreign_key "comments", "articles"
-  add_foreign_key "taggings", "articles"
-  add_foreign_key "taggings", "tags"
 end

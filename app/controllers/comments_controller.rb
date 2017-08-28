@@ -29,7 +29,8 @@ class CommentsController < ApplicationController
 
   def comment_params
     params.require(:comment).permit(:author_name, :body,
-                                    :humanizer_answer, :humanizer_question_id)
+                                    :humanizer_answer, :humanizer_question_id,
+                                    :bypass_humanizer)
   end
 
   def redirect_to_article_with(css_id)
