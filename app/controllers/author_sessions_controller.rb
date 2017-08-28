@@ -1,4 +1,6 @@
 class AuthorSessionsController < ApplicationController
+  include ApplicationHelper
+
   before_filter :require_login, except: [:new, :create, :destroy]
 
   def new
