@@ -1,9 +1,9 @@
 class AuthorsController < ApplicationController
   before_action :set_author, only: [:show, :edit, :update, :destroy]
 
-  before_filter :user_is_not_admin, except: [:show]
-  before_filter :zero_authors_or_authenticated, only: [:new, :create]
-  before_filter :require_login, except: [:show]
+  before_filter :user_is_not_admin,             except: [:show]
+  before_filter :zero_authors_or_authenticated, only:   [:new, :create]
+  before_filter :require_login,                 except: [:show]
 
   def user_is_not_admin
     redirect_to root_path unless admin?
@@ -22,7 +22,7 @@ class AuthorsController < ApplicationController
 
   def show
     @title = set_author.username
-    @articles = @author.articles.sort_by(&:created_at).reverse
+    @articles = @author.articles.order(created_at: :desc)
   end
 
   def new
@@ -62,6 +62,7 @@ class AuthorsController < ApplicationController
 
   def destroy
     @author.destroy
+
     respond_to do |format|
       format.html { redirect_to authors_url, notice: 'Author was successfully destroyed.' }
       format.json { head :no_content }
@@ -70,13 +71,12 @@ class AuthorsController < ApplicationController
 
   private
 
-  # Use callbacks to share common setup or constraints between actions.
   def set_author
     @author = Author.find(params[:id])
   end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
   def author_params
-    params.require(:author).permit(:username, :email, :password, :password_confirmation)
+    params.require(:author).permit(:username, :email,
+                                   :password, :password_confirmation)
   end
 end
