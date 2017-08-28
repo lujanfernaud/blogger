@@ -239,7 +239,6 @@ PLATFORMS
 DEPENDENCIES
   administrate
   awesome_print (~> 1.7)
-  byebug
   ckeditor
   coffee-rails (~> 4.1.0)
   font-awesome-rails

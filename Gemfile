@@ -38,8 +38,6 @@ gem 'humanizer'
 
 # Pretty print Ruby objects
 gem 'awesome_print', '~> 1.7'
-# Use pry-byebug as a debugger
-gem 'pry-byebug'
 # Use specific version of Rake to solve some problems
 gem 'rake', '~> 12.0.0'
 
@@ -60,8 +58,8 @@ gem 'inline_svg'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
+  # Use pry-byebug as a debugger
+  gem 'pry-byebug'
 end
 
 group :development do
