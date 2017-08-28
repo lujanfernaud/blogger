@@ -10,12 +10,12 @@ module ApplicationHelper
   end
 
   def demo_user
-    Author.find_by(id: 4)
+    Author.where(demo: true).take
   end
 
   def demo_user?
     return false unless current_user
 
-    current_user == demo_user
+    current_user.demo?
   end
 end

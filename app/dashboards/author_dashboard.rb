@@ -16,6 +16,7 @@ class AuthorDashboard < Administrate::BaseDashboard
     password_confirmation: Field::String.with_options(searchable: false),
     crypted_password: Field::Text,
     salt: Field::Text,
+    demo: Field::Boolean,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
   }.freeze
@@ -30,6 +31,7 @@ class AuthorDashboard < Administrate::BaseDashboard
     :id,
     :username,
     :email,
+    :demo,
     :created_at,
   ].freeze
 
@@ -52,6 +54,7 @@ class AuthorDashboard < Administrate::BaseDashboard
     :email,
     :password,
     :password_confirmation,
+    :demo,
   ].freeze
 
   # Overwrite this method to customize how authors are displayed
