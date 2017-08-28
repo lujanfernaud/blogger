@@ -5,13 +5,13 @@ class ArticlesController < ApplicationController
   include ArticlesHelper
 
   def index
-    @articles = Article.all.sort_by(&:created_at).reverse
+    @articles = Article.order(created_at: :desc)
     @title = "All Articles"
   end
 
   def home
     @latest_article = Article.last
-    @articles_in_home = Article.all.sort_by(&:created_at).reverse[1..6]
+    @articles_in_home = Article.order(created_at: :desc)[1..6]
   end
 
   def show
@@ -22,7 +22,7 @@ class ArticlesController < ApplicationController
   end
 
   def popular
-    @most_popular_articles = Article.all.sort_by(&:view_count).reverse.first(10)
+    @most_popular_articles = Article.order(view_count: :desc).limit(10)
     @title = "Most Popular Articles"
   end
 
