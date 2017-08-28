@@ -1,8 +1,10 @@
 class ArticlesController < ApplicationController
-  before_filter :require_login, except: [:index, :home, :show, :popular, :about]
-  before_filter :find_article, only: [:show, :edit, :update, :destroy]
-
   include ArticlesHelper
+
+  before_filter :require_login, except: [:index, :home, :show,
+                                         :popular, :about]
+
+  before_filter :find_article,  only:   [:show, :edit, :update, :destroy]
 
   def index
     @articles = Article.order(created_at: :desc)
