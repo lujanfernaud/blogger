@@ -27,6 +27,7 @@ class CommentDashboard < Administrate::BaseDashboard
     :id,
     :author_name,
     :body,
+    :created_at,
   ].freeze
 
   # SHOW_PAGE_ATTRIBUTES
@@ -38,7 +39,6 @@ class CommentDashboard < Administrate::BaseDashboard
     :body,
     :created_at,
     :updated_at,
-    :bypass_humanizer,
   ].freeze
 
   # FORM_ATTRIBUTES
