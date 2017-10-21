@@ -1,6 +1,6 @@
 # Blogo
 
-This project started as my take on [Jumpstart Lab's Blogger Project](http://tutorials.jumpstartlab.com/projects/blogger.html). After completing every section of the tutorial I decided to add some extra functionality and work on the front-end. Then continued making improvements with the new knowledge I was acquiring.
+A simple blog system using Rails.
 
 ## Demo
 
